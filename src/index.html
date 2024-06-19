@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +15,24 @@
       <h1>Kdrama Database</h1>
     </header>
     <main>
-      <div id="list-container" class="flex-container">
+      <div id="filter-container">
+        <label for="filter">Filtrar por género:</label>
+        <select id="filter" data-testid="select-filter" name="gender">
+            <option value="all">Todos</option>
+            <option value="Comedia">Comedia</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="Fantasía">Fantasía</option>
+            <option value="Ciencia ficción">Ciencia ficción</option>
+            <option value="Acción">Acción</option>            
+        </select>
       </div>
+      <div id="root" class="flex-container"></div>
 
     </main>
     <footer>
       <p class="footer__copyright">
-        &copy;2024 Franchesca Zelaya - Karen Mendoza
+        &copy;2024 Franchesca Zelaya - Karen Mendoza  
       </p>
     </footer>
     <script src="main.js" type="module"></script>

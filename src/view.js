@@ -10,15 +10,13 @@
         const title = document.createElement("h3");
         title.textContent = item.name;
 
-        const shortDescription = document.createElement("p");
-        shortDescription.textContent = item.shortDescription;
-
-        const description = document.createElement("p");
-        description.textContent = item.description;
-
         const image = document.createElement("img");
         image.src = item.imageUrl;
-        image.alt = item.name;       
+        image.alt = item.name; 
+
+        const shortDescription = document.createElement("p");
+        shortDescription.textContent = item.shortDescription;       
+      
         // Crear un contenedor para los facts
         const factsContainer = document.createElement("div");
 
@@ -33,9 +31,8 @@
         
         // Agregar los elementos al <li>
         li.appendChild(title);
-        li.appendChild(shortDescription);
-        li.appendChild(description);
         li.appendChild(image);
+        li.appendChild(shortDescription);
         li.appendChild(factsContainer);
 
         // Agregar los facts al contenedor de facts
