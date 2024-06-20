@@ -1,52 +1,22 @@
-  export const renderItems = (data) => {
-    
-    //Crear un elemento <ul> utilizando el método createElement.
-    const ul = document.createElement("ul");
-    //Recorrer la data mediante un bucle o algún método de array como forEach o map
-    data.forEach(item => {
-      //Por cada elemento de la data, crear un elemento <li>.
+export const renderItems = (data) => {
+  const ul = document.createElement("ul");
+
+  data.forEach(item => {
       const li = document.createElement("li");
-       
-        const title = document.createElement("h3");
-        title.textContent = item.name;
 
-        const image = document.createElement("img");
-        image.src = item.imageUrl;
-        image.alt = item.name; 
+      li.innerHTML = `
+          <ul itemscope itemtype="http://schema.org/TVSeries">
+              <h2 itemprop="name">${item.name}</h2>    
+              <img src="${item.imageUrl}" alt="${item.name}" itemprop="image" />
+              <dd itemprop="description">${item.shortDescription}</dd>
+              <div><strong>Género:</strong> <span itemprop="genre">${item.facts.gender}</span></div>
+              <div><strong>Año:</strong> <span itemprop="datePublished">${item.facts.year}</span></div>
+              <div><strong>Número de capítulos:</strong> <span itemprop="numberOfEpisodes">${item.facts.chapters}</span></div>
+          </ul>
+      `;
 
-        const shortDescription = document.createElement("p");
-        shortDescription.textContent = item.shortDescription;       
-      
-        // Crear un contenedor para los facts
-        const factsContainer = document.createElement("div");
+      ul.appendChild(li);
+  });
 
-        const gender = document.createElement("p");
-        gender.textContent = `Género: ${item.facts.gender}`;
-
-        const year = document.createElement("p");
-        year.textContent = `Año: ${item.facts.year}`;
-
-        const chapters = document.createElement("p");
-        chapters.textContent = `Capítulos: ${item.facts.chapters}`;
-        
-        // Agregar los elementos al <li>
-        li.appendChild(title);
-        li.appendChild(image);
-        li.appendChild(shortDescription);
-        li.appendChild(factsContainer);
-
-        // Agregar los facts al contenedor de facts
-        factsContainer.appendChild(gender);
-        factsContainer.appendChild(year);
-        factsContainer.appendChild(chapters);
-        // Agregar cada <li> al <ul> utilizando appendChild.
-        ul.appendChild(li);  
-     
-     });
-     //Finalmente, retornar el elemento <ul>
-      return ul;
- //console.log(data)
-  
-//return 'example';
-
-    }
+  return ul;
+};
