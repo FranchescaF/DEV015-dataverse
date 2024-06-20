@@ -9,32 +9,97 @@
       content="Manejo de base de datos de 24 Items, diseño responsivo de una página web interactiva." />
     <meta name="keywords" content="proyecto, html, css, base de datos, Laboratoria, Bootcamp, diseño responsivo, página web" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Kdrama Database</h1>
-    </header>
-    <main>
-      <div id="filter-container">
-        <label for="filter">Filtrar por género:</label>
-        <select id="filter" data-testid="select-filter" name="gender">
-            <option value="all">Todos</option>
-            <option value="Comedia">Comedia</option>
-            <option value="Drama">Drama</option>
-            <option value="Romance">Romance</option>
-            <option value="Fantasía">Fantasía</option>
-            <option value="Ciencia ficción">Ciencia ficción</option>
-            <option value="Acción">Acción</option> 
-                      
-        </select>
+    <header class="header">
+      <h1 class="header__title">Kdrama Database</h1>
+      <div class="header__description">
+        <p class="descripción">
+          Hola! No sabes que Kdrama ver este fin de semana? Usa Kdrama Database
+          donde podras encontrar diferentes Kdramas por género, por año y la cantidad
+          de episodios.
+        </p>
       </div>
-      <div id="root" class="flex-container"></div>
+      <!--Nav-->
+      <nav class="filter-container" id="filter-container">
+        <!--Sección 1: Filtra por género
+        <div class="filter-container__gender">
+          <label for="filter-gender">Filtrar por género:</label>
+          <select id="filter-gender" data-testid="select-filter" name="gender">
+              <option value="all">Todos</option>
+              <option value="Comedia">Comedia</option>
+              <option value="Drama">Drama</option>
+              <option value="Romance">Romance</option>
+              <option value="Fantasía">Fantasía</option>
+              <option value="Ciencia ficción">Ciencia ficción</option>
+              <option value="Acción">Acción</option>
+          </select>
+        </div>-->
 
+        <!--Select 2: Selección de año-->
+        <div class="filter-container__year">
+          <label for="filter-year">Seleccionar por Año:</label>
+          <select name="year" id="filter-year" data-testid="select-filter-2">
+            <option value="2007" >2007</option>
+            <option value="2009">2009</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2016" >2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020" >2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select>
+        </div>
+
+        <!--Select 3: Selección de Cápitulos-->
+        <div class="filter-container__chapters">
+          <label for="filter-chapters">Seleccionar por Cápitulos:</label>
+          <select name="chapters" id="filter-chapters" data-testid="select-filter-3">
+            <option value="9">9</option>
+            <option value="12">12</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+          </select>
+        </div>
+
+        <!--Select 4: Selección de Orden-->
+        <div class="filter-container__order">
+          <label for="order-select">Ordenar</label>
+          <select name="name" id="order-select" data-testid="select-sort">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+          </select>
+        </div>
+
+        <!--Botón 1: Limpiar-->
+        <button data-testid="button-clear">Limpiar</button>
+
+        <!--Botón 2: Métricas Ranking-->
+        <button class="metrics">Ranking</button>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="root" class="flex-container"></div>
     </main>
-    <footer>
-      <p class="footer__copyright">
-        &copy;2024 Franchesca Zelaya - Karen Mendoza  
-      </p>
+    <footer class="footer">
+      <div class="footer__copyright">
+        <p>
+          Desarrollado por
+          <a href="https://github.com/FranchescaF">Franchesca Zelaya</a> y
+          <a href="">Karen Mendoza</a>
+        </p>
+        <p>&copy;Proyecto Dataverse 2024 - Laboratoria</p>
+      </div>
     </footer>
     <script src="main.js" type="module"></script>
   </body>
