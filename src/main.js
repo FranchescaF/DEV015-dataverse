@@ -1,6 +1,5 @@
 import { filterData } from './dataFunctions.js';
 import { renderItems } from './view.js';
-
 import data from './data/dataset.js';
 
 const rootContainer = document.querySelector('#root');
