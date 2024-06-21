@@ -49,7 +49,7 @@ export default [
   "name": "City Hunter",
   "shortDescription": "Un hombre busca venganza contra los corruptos.",
   "description": "City Hunter sigue a Lee Yoon-sung, un joven que busca venganza por la muerte de su padre, quien fue traicionado por sus compañeros durante una misión secreta. Trabajando en la Casa Azul, la residencia presidencial, Yoon-sung se convierte en un vigilante conocido como 'City Hunter', desentrañando la corrupción y luchando contra la injusticia. La serie combina acción, drama y romance, destacándose por sus emocionantes escenas de combate y la complejidad emocional de sus personajes, mientras Yoon-sung se enfrenta a dilemas morales y desarrolla una relación amorosa complicada con Kim Na-na.",
-  "imageUrl": "https://m.media-amazon.com/images/I/51NjD0ejXuL._AC_UF894,1000_QL80_.jpg",
+  "imageUrl": "https://i.pinimg.com/736x/9c/72/7e/9c727ea92074fe2e729f6f9c93116045.jpg",
   "facts": {
     "gender": "Acción, Drama, Crimen",
     "year": 2011,
@@ -109,7 +109,7 @@ export default [
   "name": "Goblin",
   "shortDescription": "Un inmortal busca a su novia humana.",
   "description": "Goblin narra la historia de Kim Shin, un ser inmortal conocido como el 'Goblin', que busca a su novia humana, la única persona que puede romper su maldición y poner fin a su vida eterna. Ji Eun-tak, una estudiante de secundaria con la capacidad de ver fantasmas, es la elegida. A medida que su relación se desarrolla, ambos enfrentan desafíos sobrenaturales y secretos del pasado. La serie es aclamada por su cinematografía deslumbrante, su guión poético y la química entre los actores principales, ofreciendo una mezcla única de romance, fantasía y drama.",
-  "imageUrl": "https://i.pinimg.com/originals/cb/b8/d2/cbb8d29fa548c12f9cd20f744db96e5f.jpg",
+  "imageUrl": "https://i.ebayimg.com/images/g/6CQAAOSwAUBeR430/s-l1200.webp",
   "facts": {
     "gender": "Fantasía, Romance, Drama",
     "year": 2016,
@@ -244,7 +244,7 @@ export default [
   "name": "Vincenzo",
   "shortDescription": "Un consigliere coreano-italiano lucha contra la corrupción.",
   "description": "Vincenzo Cassano, sigue la vida de un abogado coreano-italiano y consigliere de la mafia, regresa a Corea del Sur para recuperar un tesoro oculto. Al enfrentarse a un conglomerado corrupto, se asocia con la abogada Hong Cha-young. Juntos, utilizan métodos poco convencionales para luchar por la justicia y proteger a los residentes de un complejo de apartamentos. Este drama mezcla acción, comedia y romance, destacando la química entre los protagonistas y las intrincadas tramas legales, ofreciendo una experiencia emocionante y entretenida.",
-  "imageUrl": "https://wallpapercave.com/wp/wp9524644.jpg",
+  "imageUrl": "https://i.ebayimg.com/images/g/fE4AAOSwFG9goJyR/s-l1200.webp",
   "facts": {
     "gender": "Drama, Acción, Comedia",
     "year": 2021,

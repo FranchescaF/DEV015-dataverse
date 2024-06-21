@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,13 @@
     </style>
   </head>
   <body>
-    <header class="header">
+    <header class="header" role="banner">
       <h1 class="header__title">Kdrama Database</h1>
-      <div class="header__description">
-        <p class="descripción">
-          Hola! No sabes que Kdrama ver este fin de semana? Usa Kdrama Database
-          donde podras encontrar diferentes Kdramas por género, por año y la cantidad
-          de episodios.
-        </p>
-      </div>
+      <p class="header__description">
+        ¡Hola! ¿Estás buscando el Kdrama perfecto para maratonear este fin de semana? ¡No busques más! En Kdrama Database, te ofrecemos una vasta colección de Kdramas que podrás filtrar fácilmente por género, año de lanzamiento, y número de episodios. Sumérgete en emocionantes historias de romance, drama, comedia, fantasía, ciencia ficción y más. Ya seas un veterano en el mundo de los Kdramas o un recién llegado, aquí encontrarás recomendaciones adaptadas a tus gustos. ¡Explora y descubre tu próximo Kdrama favorito con nosotros!
+      </p>
       <!--Nav-->
-      <nav class="filter-container" id="filter-container">
+      <nav class="filter-container" id="filter-container" role="navigation">
         <!--Sección 1: Filtra por género-->
         <div class="filter-container__gender">
           <label for="filter-gender">Filtrar por género:</label>
@@ -35,11 +31,11 @@
               <option value="Romance">Romance</option>
               <option value="Fantasía">Fantasía</option>
               <option value="Ciencia ficción">Ciencia ficción</option>
-              <option value="Acción">Acción</option>   
-              <option value="Thriller">Thriller</option>   
-              <option value="Crimen">Crimen</option>                    
-              <option value="Histórico">Histórico</option>                    
-              <option value="Familiar">Familiar</option>                    
+              <option value="Acción">Acción</option>
+              <option value="Thriller">Thriller</option>
+              <option value="Crimen">Crimen</option>
+              <option value="Histórico">Histórico</option>
+              <option value="Familiar">Familiar</option>
           </select>
         </div>
 
@@ -79,9 +75,9 @@
         <!--Sección 4: Selección de Orden-->
         <div class="filter-container__order">
           <label for="order-select">Ordenar</label>
-          <select name="name" id="order-select" data-testid="select-sort">
-            <option value="asc">Ascendente</option>
-            <option value="desc">Descendente</option>
+          <select name="name" id="order-select" data-testid="sort-order">
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
           </select>
         </div>
 
@@ -92,15 +88,15 @@
         <button class="metrics">Ranking</button>
       </nav>
     </header>
-    <main class="main">
+    <main class="main" role="main">
       <div id="root" class="flex-container"></div>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="footer__copyright">
         <p>
           Desarrollado por
           <a href="https://github.com/FranchescaF">Franchesca Zelaya</a> y
-          <a href="">Karen Mendoza</a>
+          <a href="https://github.com/Karen17Mendoza">Karen Mendoza</a>
         </p>
         <p>&copy;Proyecto Dataverse 2024 - Laboratoria</p>
       </div>
