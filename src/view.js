@@ -3,7 +3,6 @@ export const renderItems = (data) => {
 
   data.forEach(item => {
     const li = document.createElement("li");
-    li.classList.add('card');
     
     li.setAttribute("itemtype", "http://schema.org/TVSeries");
 
