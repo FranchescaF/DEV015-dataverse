@@ -11,4 +11,15 @@ export const filterData = (data,filterBy,value) => {
     return false;
   });
 
-  };
+};
+export const sortData = (data,sortBy,sortOrder) => {
+  const sortedData = [...data].sort((a,b) => {
+        if (sortOrder === "asc") {
+            return a[sortBy].localeCompare(b[sortBy]);
+        } else {
+            return b[sortBy].localeCompare(a[sortBy]);
+        }
+  });
+  return sortedData;
+
+};
