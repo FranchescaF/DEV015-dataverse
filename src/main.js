@@ -4,8 +4,8 @@ import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
 const rootContainer = document.querySelector('#root');
-const filterSelect = document.querySelector('#filter');
-const sortSelect = document.querySelector('#order');
+const filterSelect = document.querySelector('#filter-gender');
+const sortSelect = document.querySelector('#order-select');
 
 // Funcion para iterar la data filtrada
 const renderFilteredItems = (filterBy, value) => {
