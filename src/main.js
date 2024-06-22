@@ -6,8 +6,10 @@ import data from './data/dataset.js';
 const rootContainer = document.querySelector('#root');
 const filterSelect = document.querySelector('#filter-gender');
 const sortSelect = document.querySelector('#order-select');
+const filterSelectYear = document.getElementById('#filter-year');
+const filterSelectChapters = document.getElementById('#filter-chapters');
 
-// Funcion para iterar la data filtrada
+// Funcion para filtrar género
 const renderFilteredItems = (filterBy, value) => {
   //Filtramos los datos
   const filteredData = filterData(data,filterBy,value);
@@ -41,7 +43,6 @@ filterSelect.addEventListener('change',(event) => {
   const filterValue = event.target.value;
   //Llamamos a la funcion para renderizar los elementos que han sido filtrados
   renderFilteredItems(event.target.name, filterValue);
-});
 
 //Agregamos un event listener para el select de orden
 sortSelect.addEventListener('change', (event) => {
