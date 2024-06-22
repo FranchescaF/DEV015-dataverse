@@ -16,7 +16,7 @@ body {
 /*Estilo del header*/
 .header {
   position: relative;
-  text-align: left;
+  text-align: center;
   padding: 60px 20px 20px;
   /*background-image: url('https://i.pinimg.com/originals/63/9b/1b/639b1b53cdc36979a0f7ad4c067c8d94.png'); /* Asegúrate de ajustar el path a tu imagen */
   background-size: cover;
@@ -34,6 +34,7 @@ body {
   margin: 0;
   text-align: center;
   z-index: 1000;
+  
 }
 
 .header__description{
@@ -47,67 +48,70 @@ body {
 }
 
 /*Estilos de contenedores option, select, button*/
-.flex-container {
+/*.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   gap: 20px;
-}
+}*/
 
-.filter-container__gender,
-.filter-container__year,
-.filter-container__chapters,
-.filter-container__order {
-  flex: 1 1 10%; /* Ocupa aproximadamente el 30% del ancho del contenedor */
-  margin-bottom: 20px;
-}
-
-.filter-container button {
-  flex: 1 1 45%; /* Ocupa aproximadamente el 50% del ancho del contenedor */
-  margin-bottom: 20px;
-}
-
-.filter-container__gender label,
-.filter-container__year label,
-.filter-container__chapters label,
-.filter-container__order label {
-  font-size: 1.2em;
-  display: block;
-  margin-bottom: 10px;
-}
-
-#filter-gender,
-#filter-year,
-#filter-chapters,
-#order-select {
-  width: 20%;
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
   padding: 10px;
-  font-size: 1.1em;
+  color: white;
+}
+
+.filter-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+}
+
+.filter-container select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;  
   background-color: #333;
   color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-button {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  font-size: 1.1em;
-  background-color: #444;
-  color: white;
+.filter-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button-clear {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: rgba(38, 36, 36, 0.8);
+  color: white;
+  cursor: pointer;
+}
+.metrics{
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: rgba(38, 36, 36, 0.8);
+  color: white;
   cursor: pointer;
 }
 
 button:hover {
   background-color: #555;
 }
+  
 
 /*Estilo de las cartas*/
 .flex-container ul{
@@ -136,12 +140,44 @@ button:hover {
 }
 
 .flex-container li img {
-  max-width: 100%;
-  width: 400px;
+  max-width: 180%;
+  width: 270px;
   border-radius: 10px;
   max-height: 100%;
-  height: 350px;
+  height: 400px;
   object-fit: cover;
+}
+
+/*Modo responsive*/
+/* Para tablets */
+@media (max-width: 768px) {
+  .filter-container {
+      flex-direction: column;
+  }
+
+  .button-container {
+      flex-direction: column;
+  }
+
+  .card {
+      max-width: 100%;
+  }
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+  .header__title {
+      font-size: 1.5em;
+  }
+
+  .header__description {
+      font-size: 1em;
+  }
+
+  .button-small {
+      width: 100%;
+      margin-bottom: 10px;
+  }
 }
 
 /*Estilos para el footer*/
