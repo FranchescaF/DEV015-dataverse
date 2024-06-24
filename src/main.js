@@ -8,9 +8,6 @@ const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
 
-// Iniciar con todos los datos en pantalla
-renderFilteredItems("gender", "all", "all", "all", "asc");
-
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
