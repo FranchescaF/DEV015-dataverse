@@ -1,25 +1,23 @@
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
+export function filterData(data, filterBy, value) {
+  return data.filter((obj) => obj.facts[filterBy] == value);
+}
 
-export const filterData = (data,filterBy,value) => {
-  if (value === "all"){
-    return data; // devuelve todos los daatos
+export function sortData(data, sortBy, sortOrder) {
+  const dataCopy = data.map((obj) => obj);
+  if (sortOrder === "asc") {
+    return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+  } else {
+    return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
   }
-  return data.filter(item => {
-    if (filterBy ==="gender"){
-      return item.facts.gender.includes(value);
-    }
-    return false;
-  });
+}
 
-};
-export const sortData = (data,sortBy,sortOrder) => {
-  const sortedData = [...data].sort((a,b) => {
-        if (sortOrder === "asc") {
-            return a[sortBy].localeCompare(b[sortBy]);
-        } else {
-            return b[sortBy].localeCompare(a[sortBy]);
-        }
-  });
-  return sortedData;
-
-};
+export function metricsData(data) {
+  const dataCopy = data.map((obj) => obj);
+  return dataCopy.reduce((topObjects, currentObject) => {
+    return [...topObjects, currentObject].sort(
+      (a, b) =>
+        parseFloat(b.facts["percentageOfUsers"]) -
+        parseFloat(a.facts["percentageOfUsers"])
+    ).slice(0, 3);
+  }, []);
+}

@@ -126,7 +126,7 @@ export default [
   "description": "Weightlifting Fairy Kim Bok-joo sigue la vida de Kim Bok-joo, una talentosa levantadora de pesas universitaria, mientras navega por los desafíos del deporte, la amistad y el amor. En el camino, desarrolla una relación especial con Jung Joon-hyung, un nadador con su propio conjunto de problemas. La serie es conocida por su enfoque refrescante y realista de los jóvenes que persiguen sus sueños, abordando temas de autoestima, perseverancia y crecimiento personal. Con momentos cómicos y conmovedores, es una historia inspiradora sobre la superación personal y el poder del apoyo mutuo.",
   "imageUrl": "https://1.vikiplatform.com/c/32634c/weightlifting-fairy_1560x872.jpg?x=b",
   "facts": {
-    "gender": "Comedia romántica, Deportes",
+    "gender": "Comedia, Romance, Deportes",
     "year": 2016,
     "chapters": 16
   },
@@ -141,7 +141,7 @@ export default [
   "description": "Strong Woman Do Bong-soon cuenta la historia de Do Bong-soon, una joven con una fuerza sobrehumana heredada de las mujeres de su familia. Sueña con diseñar videojuegos, pero su vida da un giro cuando es contratada como guardaespaldas de Ahn Min-hyuk, un CEO de una empresa de videojuegos que está siendo amenazado. Mientras lucha contra el crimen en su vecindario y navega por un complicado triángulo amoroso, Bong-soon aprende a aceptar y usar sus habilidades para el bien. La serie combina comedia, romance y acción de manera encantadora y entretenida.",
   "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/40c1eb008ea7d9d50779854f67150085f8766c42e82e1594f09793835994a5ff.jpg",
   "facts": {
-    "gender": "Fantasía, Comedia romántica",
+    "gender": "Fantasía, Comedia, Romance",
     "year": 2017,
     "chapters": 16
   },
