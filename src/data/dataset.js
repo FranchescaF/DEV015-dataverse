@@ -6,7 +6,7 @@ export default [
   "description": "Coffee Prince es una serie que sigue a Go Eun-chan, una joven que se hace pasar por un hombre para trabajar en una cafetería. Choi Han-kyul, el dueño de la cafetería, no sabe que Eun-chan es una mujer y comienza a desarrollar sentimientos por ella, lo que le causa mucha confusión. La serie explora temas de identidad, amor y aceptación, ofreciendo tanto momentos divertidos como conmovedores. La dinámica entre los personajes principales y el desarrollo de sus relaciones es el corazón de esta encantadora comedia romántica.",
   "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/0db53df3e1f333851d5a8b01c42c330780062963d2939f457befb33523591cb6.jpg",
   "facts": {
-    "gender": "Comedia, Drama, Romance",
+    "gender": "Drama, Comedia Romántica",
     "year": 2007,
     "chapters": 17
   },
@@ -21,7 +21,7 @@ export default [
   "description": "Boys Over Flowers sigue a Geum Jan-di, una chica de familia humilde que recibe una beca para asistir a una prestigiosa escuela secundaria. Allí, se enfrenta al F4, un grupo de los chicos más ricos y populares de la escuela, liderado por el arrogante Goo Jun-pyo. A pesar de las dificultades y el acoso, Jan-di mantiene su espíritu fuerte y pronto se encuentra atrapada en un triángulo amoroso. La serie es conocida por sus giros dramáticos, momentos románticos y la evolución de los personajes principales, especialmente el crecimiento de Jun-pyo.",
   "imageUrl": "https://1.bp.blogspot.com/-95M-YzoFbGI/W-gomFRmsNI/AAAAAAAAoJs/y6PZ4UruQtES0RlLoV_kwfLpMWg0IuzgwCLcBGAs/s1600/Boys-Before-Flowers.jpg",
   "facts": {
-    "gender": "Romance, Drama, Comedia",
+    "gender": "Drama, Comedia Romántica",
     "year": 2009,
     "chapters": 25
   },
@@ -36,7 +36,7 @@ export default [
   "description": "Secret Garden narra la historia de Kim Joo-won, un arrogante CEO, y Gil Ra-im, una valiente doble de acción. Sus vidas se entrelazan de manera inesperada cuando misteriosamente intercambian cuerpos después de beber una extraña bebida en una misteriosa tienda. A medida que intentan adaptarse a sus nuevas vidas, desarrollan sentimientos profundos el uno por el otro. La serie destaca por su mezcla de romance, comedia y elementos fantásticos, además de su exploración de la identidad y el amor verdadero, con una química notable entre los protagonistas.",
   "imageUrl": "https://asianwiki.com/images/f/f3/Secret_Garden_%28SBS-2010-Korean_Drama%29-p3.jpg",
   "facts": {
-    "gender": "Drama, Romance, Comedia, Ciencia ficción, Fantasía",
+    "gender": "Drama, Comedia Romántica, Ciencia ficción, Fantasía",
     "year": 2011,
     "chapters": 20
   },
@@ -81,7 +81,7 @@ export default [
   "description": "Reply 1988 es una serie nostálgica que sigue la vida de cinco amigos y sus familias en un vecindario de Seúl durante la década de 1980. La serie mezcla comedia, drama y romance, mostrando los altibajos de la adolescencia y la transición a la adultez. A través de su narrativa cálida y realista, explora las relaciones familiares, la amistad y el primer amor, capturando la esencia de la época. Cada personaje tiene su propio viaje personal, haciendo que los espectadores se conecten emocionalmente con sus historias y recuerdos compartidos.",
   "imageUrl": "https://bestofkorea.com/wp-content/uploads/2021/01/reply-1988-main5.jpg",
   "facts": {
-    "gender": "Comedia, Drama, Familiar",
+    "gender": "Comedia Romántica, Drama, Familiar",
     "year": 2016,
     "chapters": 20
   },
@@ -96,7 +96,7 @@ export default [
   "description": "Descendants of the Sun sigue la historia de amor entre Yoo Si-jin, un capitán de las fuerzas especiales, y Kang Mo-yeon, una médica. Sus caminos se cruzan en una misión de paz en un país devastado por la guerra, donde enfrentan juntos desafíos tanto personales como profesionales. La serie destaca por su emocionante combinación de romance, acción y drama, explorando temas de sacrificio, deber y el impacto de las decisiones en tiempos de crisis. La química entre los protagonistas y las impresionantes escenas de acción han capturado a audiencias de todo el mundo.",
   "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/c33978a96dc27be7a8a6154aeea39186d9a5ac906a4d5311b6470ac301ce6dab.jpg",
   "facts": {
-    "gender": "Acción, Romance, Drama",
+    "gender": "Acción, Comedia Romántica, Drama",
     "year": 2016,
     "chapters": 16
   },
@@ -111,7 +111,7 @@ export default [
   "description": "Goblin narra la historia de Kim Shin, un ser inmortal conocido como el 'Goblin', que busca a su novia humana, la única persona que puede romper su maldición y poner fin a su vida eterna. Ji Eun-tak, una estudiante de secundaria con la capacidad de ver fantasmas, es la elegida. A medida que su relación se desarrolla, ambos enfrentan desafíos sobrenaturales y secretos del pasado. La serie es aclamada por su cinematografía deslumbrante, su guión poético y la química entre los actores principales, ofreciendo una mezcla única de romance, fantasía y drama.",
   "imageUrl": "https://i.ebayimg.com/images/g/6CQAAOSwAUBeR430/s-l1200.webp",
   "facts": {
-    "gender": "Fantasía, Romance, Drama",
+    "gender": "Fantasía, Comedia Romántica, Drama",
     "year": 2016,
     "chapters": 16
   },
@@ -126,7 +126,7 @@ export default [
   "description": "Weightlifting Fairy Kim Bok-joo sigue la vida de Kim Bok-joo, una talentosa levantadora de pesas universitaria, mientras navega por los desafíos del deporte, la amistad y el amor. En el camino, desarrolla una relación especial con Jung Joon-hyung, un nadador con su propio conjunto de problemas. La serie es conocida por su enfoque refrescante y realista de los jóvenes que persiguen sus sueños, abordando temas de autoestima, perseverancia y crecimiento personal. Con momentos cómicos y conmovedores, es una historia inspiradora sobre la superación personal y el poder del apoyo mutuo.",
   "imageUrl": "https://1.vikiplatform.com/c/32634c/weightlifting-fairy_1560x872.jpg?x=b",
   "facts": {
-    "gender": "Comedia romántica, Deportes",
+    "gender": "Comedia Romántica, Deportes",
     "year": 2016,
     "chapters": 16
   },
@@ -141,7 +141,7 @@ export default [
   "description": "Strong Woman Do Bong-soon cuenta la historia de Do Bong-soon, una joven con una fuerza sobrehumana heredada de las mujeres de su familia. Sueña con diseñar videojuegos, pero su vida da un giro cuando es contratada como guardaespaldas de Ahn Min-hyuk, un CEO de una empresa de videojuegos que está siendo amenazado. Mientras lucha contra el crimen en su vecindario y navega por un complicado triángulo amoroso, Bong-soon aprende a aceptar y usar sus habilidades para el bien. La serie combina comedia, romance y acción de manera encantadora y entretenida.",
   "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/40c1eb008ea7d9d50779854f67150085f8766c42e82e1594f09793835994a5ff.jpg",
   "facts": {
-    "gender": "Fantasía, Comedia romántica",
+    "gender": "Fantasía, Comedia Romántica",
     "year": 2017,
     "chapters": 16
   },
@@ -186,7 +186,7 @@ export default [
   "description": "Crash Landing on You cuenta la historia de Yoon Se-ri, una heredera surcoreana que, debido a un accidente de parapente, aterriza en Corea del Norte. Allí conoce a Ri Jeong-hyeok, un oficial del ejército norcoreano que decide ayudarla a esconderse y regresar a casa. A medida que pasan tiempo juntos, desarrollan sentimientos profundos, enfrentando obstáculos políticos y personales. Este drama es famoso por su emocionante narrativa y la química entre los protagonistas, capturando la atención de audiencias en todo el mundo.",
   "imageUrl": "https://image.tmdb.org/t/p/original/rT4KG2euOofQYYyY0I4Oc0WUbNs.jpg",
   "facts": {
-    "gender": "Romance, Drama",
+    "gender": "Comedia Romántica, Drama",
     "year": 2019,
     "chapters": 16
   },
@@ -201,7 +201,7 @@ export default [
   "description": "Itaewon Class sigue a la maravillosa actriz Park Sae-ro-yi, un joven que, tras la fatidica muerte injusta de su padre y su tiempo en prisión, decide abrir un restaurante en Itaewon para desafiar al conglomerado que arruino y destruyó a su querida familia. Con la ayuda de un grupo diverso de empleados, Sae-ro-yi enfrenta obstáculos empresariales y personales, luchando por justicia y éxito. Este drama es conocido por su fuerte mensaje sobre igualdad y perseverancia, así como por sus personajes bien desarrollados.",
   "imageUrl": "https://www.tvguide.com/a/img/catalog/provider/1/1/1-8911924238.jpg",
   "facts": {
-    "gender": "Drama",
+    "gender": "Drama, Romance",
     "year": 2020,
     "chapters": 16
   },
@@ -216,7 +216,7 @@ export default [
   "description": "Start-Up se centra en la gran actriz coreana Seo Dal-mi, una joven con grandes sueños de convertirse en una empresaria exitosa. En el competitivo mundo de las startups, Dal-mi se encuentra con Nam Do-san, un talentoso programador, y juntos intentan hacer realidad sus aspiraciones. El drama explora temas de innovación, amistad y romance, mostrando los altibajos de la vida empresarial y personal en el dinámico entorno de las startups, y destacando la importancia de la perseverancia y el trabajo en equipo.",
   "imageUrl": "https://0.soompi.io/wp-content/uploads/2020/09/01225007/Start-Up1.jpg",
   "facts": {
-    "gender": "Romance, Drama",
+    "gender": "Comedia Romántica, Drama",
     "year": 2020,
     "chapters": 16
   },
@@ -231,7 +231,7 @@ export default [
   "description": "Hospital Playlist sigue la vida de cinco médicos que han sido grandes amigos desde la epoca de la universidad y ahora trabajan juntos en el mismo hospital. El drama explora sus desafíos profesionales y personales, incluyendo las relaciones familiares, románticas y las luchas diarias en el entorno médico. Con momentos de comedia, drama y música, este drama ofrece una visión conmovedora y humana de la vida de los médicos y sus pacientes, resaltando la importancia de la amistad y el apoyo mutuo.",
   "imageUrl": "https://koreabyme.com/wp-content/uploads/2021/04/68738-1920x1355.jpg",
   "facts": {
-    "gender": "Drama, Comedia",
+    "gender": "Drama, Comedia Romántica",
     "year": 2020,
     "chapters": 12
   },
@@ -246,7 +246,7 @@ export default [
   "description": "Vincenzo Cassano, sigue la vida de un abogado coreano-italiano y consigliere de la mafia, regresa a Corea del Sur para recuperar un tesoro oculto. Al enfrentarse a un conglomerado corrupto, se asocia con la abogada Hong Cha-young. Juntos, utilizan métodos poco convencionales para luchar por la justicia y proteger a los residentes de un complejo de apartamentos. Este drama mezcla acción, comedia y romance, destacando la química entre los protagonistas y las intrincadas tramas legales, ofreciendo una experiencia emocionante y entretenida.",
   "imageUrl": "https://i.ebayimg.com/images/g/fE4AAOSwFG9goJyR/s-l1200.webp",
   "facts": {
-    "gender": "Drama, Acción, Comedia",
+    "gender": "Drama, Acción",
     "year": 2021,
     "chapters": 20
   },
@@ -276,7 +276,7 @@ export default [
   "description": "Hometown Cha-Cha-Cha cuenta la historia de Yoon Hye-jin, una dentista de ciudad que se muda a un pintoresco pueblo costero. Allí conoce a Hong Du-sik, un hombre talentoso y querido por los habitantes. A medida que Hye-jin se adapta a la vida rural, desarrolla una relación especial con Du-sik, enfrentando desafíos personales y comunitarios. Este drama es apreciado por su calidez, humor y la representación encantadora de la vida en un pequeño pueblo, destacando la belleza de las relaciones humanas.",
   "imageUrl": "https://kdramadiary.com/wp-content/uploads/2021/10/Hometown-Cha-Cha-Cha-review-kdramadiary.jpg",
   "facts": {
-    "gender": "Romance, Comedia",
+    "gender": "Comedia Romántica",
     "year": 2021,
     "chapters": 16
   },
@@ -306,7 +306,7 @@ export default [
   "description": "Business Proposal cuenta la historia de Shin Ha-ri, una empleada que asiste a una cita a ciegas en lugar de su amiga, solo para descubrir que su cita es su jefe, Kang Tae-moo. Para complicar las cosas, Tae-moo propone un contrato de relación falsa para evitar los arreglos matrimoniales de su familia. Lo que comienza como una farsa se convierte en un romance genuino, lleno de situaciones cómicas y conmovedoras. Este drama destaca por su humor y la química entre los protagonistas, ofreciendo una experiencia romántica y divertida.",
   "imageUrl": "https://wallpapers.com/images/hd/business-proposal-kdrama-poster-x0rod0gmpuznd9bz.jpg",
   "facts": {
-    "gender": "Romance, Comedia",
+    "gender": "Comedia Romántica",
     "year": 2022,
     "chapters": 12
   },
@@ -336,7 +336,7 @@ export default [
   "description": "Extraordinary Attorney Woo sigue a Woo Young-woo, una abogada con autismo, que trabaja en un prestigioso bufete de abogados. A pesar de posser grandes dificultades sociales para entablar relaciones interpersonales, Young-woo posee una brillante mente legal que le permite resolver casos complejos. El drama explora sus interacciones con colegas, amigos y clientes, ofreciendo una perspectiva única sobre la neurodiversidad y la inclusión. Este drama es aclamado por su enfoque sensible y actuaciones destacadas, presentando una historia inspiradora y emocionalmente resonante.",
   "imageUrl": "https://cdn.kinocheck.com/i/sn9pjlts02.jpg",
   "facts": {
-    "gender": "Drama, Legal",
+    "gender": "Drama, Legal, Romance",
     "year": 2022,
     "chapters": 16
   },
