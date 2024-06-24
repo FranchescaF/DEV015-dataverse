@@ -8,7 +8,6 @@ const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
 
-
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
