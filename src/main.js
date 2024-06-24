@@ -30,25 +30,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
-    const filterItemsGender = filterData(data, "gender", selectedValueGender == 'all' ? 'all' : selectedValueGender.trim());
+    const filterItemsGender = filterData(data, "gender", selectedValueGender);
+    resetSelectIndex(filterSelectYear);
+    resetSelectIndex(filterSelectChapters);
+    resetSelectIndex(orderSelect);
     displayCards(filterItemsGender);
   });
 
   filterSelectYear.addEventListener("change", (event) => {
-    const selectedValue = event.target.value;
-    const filterItemsYear = filterData(data, "year", selectedValue);
+    const selectedValueYear = event.target.value;
+    const filterItemsYear = filterData(data, "year", selectedValueYear);
+    resetSelectIndex(filterSelectGender);
+    resetSelectIndex(filterSelectChapters);
+    resetSelectIndex(orderSelect);
     displayCards(filterItemsYear);
   });
 
   filterSelectChapters.addEventListener("change", (event) => {
-    const selectedValue = event.target.value;
-    const filterItemsChapters = filterData(data, "chapters", selectedValue);
+    const selectedValueChapters = event.target.value;
+    const filterItemsChapters = filterData(data, "chapters", selectedValueChapters);
+    resetSelectIndex(filterSelectGender);
+    resetSelectIndex(filterSelectYear);
+    resetSelectIndex(orderSelect);
     displayCards(filterItemsChapters);
   });
 
   orderSelect.addEventListener("change",(event) => {
     const selectedValueOrder = event.target.value;
     const orderItemsName = sortData(data, "name", selectedValueOrder);
+    resetSelectIndex(filterSelectGender);
+    resetSelectIndex(filterSelectChapters);
+    resetSelectIndex(filterSelectYear);
     displayCards(orderItemsName);
   });
 
@@ -56,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     filterSelectGender.value = 'all';
     filterSelectYear.value = 'all';
     filterSelectChapters.value = 'all';
-    orderSelect.value = 'asc';
+    orderSelect.value = 'all';
     displayCards(data);
   });
 

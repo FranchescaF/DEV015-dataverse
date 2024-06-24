@@ -1,8 +1,22 @@
-export function filterData(data, filterBy, value) {
-  return data.filter((obj) => obj.facts[filterBy] == value);
-}
+export const filterData = (data, filterBy, value) => {
+  if (value === "all") {
+    return data; // Devuelve todos los datos si el valor es "all"
+  }
+  return data.filter(item => {
+    if (filterBy === "gender") {
+      return item.facts[filterBy].includes(value); // Filtra por género
+    }
+    if (filterBy === "year") {
+      return item.facts.year === parseInt(value); // Filtra por año
+    }
+    if (filterBy === "chapters") {
+      return item.facts.chapters === parseInt(value); // Filtra por cápitulos
+    }
+    return false;
+  });
+};
 
-export function sortData(data, sortBy, sortOrder) {
+export const sortData = (data, sortBy, sortOrder) => {
   const dataCopy = data.map((obj) => obj);
   if (sortOrder === "asc") {
     return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
@@ -11,7 +25,7 @@ export function sortData(data, sortBy, sortOrder) {
   }
 }
 
-export function metricsData(data) {
+export const metricsData = (data) => {
   const dataCopy = data.map((obj) => obj);
   return dataCopy.reduce((topObjects, currentObject) => {
     return [...topObjects, currentObject].sort(
