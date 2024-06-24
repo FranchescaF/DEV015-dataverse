@@ -47,6 +47,7 @@
         <div class="filter-container__year">
           <label for="filter-year">Seleccionar por Año:</label>
           <select name="year" id="filter-year" data-testid="select-filter-2">
+            <option value="all">Todos</option>
             <option value="2007" >2007</option>
             <option value="2009">2009</option>
             <option value="2011">2011</option>
@@ -66,6 +67,7 @@
         <div class="filter-container__chapters">
           <label for="filter-chapters">Seleccionar por Cápitulos:</label>
           <select name="chapters" id="filter-chapters" data-testid="select-filter-3">
+            <option value="all">Todos</option>
             <option value="9">9</option>
             <option value="12">12</option>
             <option value="16">16</option>
@@ -86,7 +88,7 @@
         </div>
      
         <!--Botón 1: Limpiar-->
-        <button class="button-clear" data-testid="button-clear">Limpiar</button>
+        <button  id="button-clear" class="button-clear" data-testid="button-clear">Limpiar</button>
 
         <!--Botón 2: Métricas Ranking-->
         <button class="metrics">Ranking</button>
