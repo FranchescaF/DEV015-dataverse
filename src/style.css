@@ -5,25 +5,37 @@
 }
 
 body {
-  background-color: #2A2C2F;
-  color: #fff;
-  font-family: 'Ubuntu', Arial, sans-serif;
+  background-color: #bc92c0;
+  color: #662962;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+h1, h2 {
+  color: #33102E; /* Títulos y Encabezados */
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #8F4898; /* Enlaces y Llamadas a la Acción */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #33102E; /* Color de los Enlaces al Pasar el Ratón */
+}
+
 /*Estilo del header*/
 .header {
   position: relative;
-  text-align: center;
-  padding: 60px 20px 20px;
-  /*background-image: url('https://i.pinimg.com/originals/63/9b/1b/639b1b53cdc36979a0f7ad4c067c8d94.png'); /* Asegúrate de ajustar el path a tu imagen */
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   color: #fff;
   overflow: hidden;
+  padding: 20px;
+  text-align: center;
 }
 
 .header__title{
@@ -34,34 +46,27 @@ body {
   margin: 0;
   text-align: center;
   z-index: 1000;
-  
+
 }
 
 .header__description{
   position: relative;
   text-align: center;
   z-index: 1000;
-  font-size: 18px;
-  font-weight: 50;
+  font-size: 1.2em;
   line-height: 30px;
   margin-top: 15px;
+  color: #34376a; /* Color de la Descripción */
+  margin: 10px 0 20px;
 }
 
 /*Estilos de contenedores option, select, button*/
-/*.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-}*/
 
 .filter-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   padding: 10px;
   color: white;
 }
@@ -77,7 +82,7 @@ body {
   padding: 5px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  width: 100%;  
+  width: 100%;
   background-color: #333;
   color: white;
   border: 1px solid #ccc;
@@ -87,34 +92,28 @@ body {
 .filter-container label {
   margin-bottom: 5px;
   font-weight: bold;
+  color: #33102E; /* Color de las Etiquetas */
+
 }
 
-.button-clear {
-  padding: 5px 10px;
+.button-clear, .metrics {
+  padding: 10px 20px;
   font-size: 20px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: rgba(38, 36, 36, 0.8);
-  color: white;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #662962;
+  color: #ffffff; /* Color del Texto del Botón */
   cursor: pointer;
-}
-.metrics{
-  padding: 5px 10px;
-  font-size: 20px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: rgba(38, 36, 36, 0.8);
-  color: white;
-  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 }
 
-button:hover {
-  background-color: #555;
+.button-clear:hover, .metrics:hover {
+  background-color: #33102E; /* Color del Botón al Pasar el Ratón */
 }
-  
 
 /*Estilo de las cartas*/
-.flex-container ul{
+.card-container ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -123,13 +122,14 @@ button:hover {
   padding: 20px;
 }
 
-.flex-container li {
+.card-container li {
   list-style-type: none;
-  border: 1px solid #f3f9f8;
-  border-radius: 15px;
+  background-color: #AB65AD; /* Fondo de las Tarjetas */
+  border: 3px solid #8F4898; /* Borde de las Tarjetas */
+  padding: 20px;
+  border-radius: 20px;
   width: 470px;
   max-width: 100%;
-  padding: 0px;
   margin: 0px;
   box-shadow: 0 4px 8px rgba(239, 236, 241, 0.1);
   text-align: center;
@@ -139,45 +139,33 @@ button:hover {
   height: 600px;
 }
 
-.flex-container li img {
+.card__title {
+  color: #33102E; /* Color del Título de la Tarjeta */
+}
+
+.card__description {
+  color: #662962; /* Color del Texto de Descripción */
+}
+
+.card__list p {
+  margin: 5px 0;
+}
+
+.card__gender strong, .card__year strong, .card__chapters strong {
+  color: #8F4898; /* Color de los Títulos de los Datos */
+}
+
+.card__gender span, .card__year span, .card__chapters span {
+  color: #33102E; /* Color de los Datos */
+}
+
+.card_image {
   max-width: 180%;
   width: 270px;
   border-radius: 10px;
   max-height: 100%;
   height: 400px;
   object-fit: cover;
-}
-
-/*Modo responsive*/
-/* Para tablets */
-@media (max-width: 768px) {
-  .filter-container {
-      flex-direction: column;
-  }
-
-  .button-container {
-      flex-direction: column;
-  }
-
-  .card {
-      max-width: 100%;
-  }
-}
-
-/* Para móviles */
-@media (max-width: 480px) {
-  .header__title {
-      font-size: 1.5em;
-  }
-
-  .header__description {
-      font-size: 1em;
-  }
-
-  .button-small {
-      width: 100%;
-      margin-bottom: 10px;
-  }
 }
 
 /*Estilos para el footer*/
@@ -199,4 +187,46 @@ button:hover {
 
 .footer__copyright a:hover {
   text-decoration: underline;
+}
+
+/*Modo responsive*/
+/* Para tablets */
+@media (min-width: 501px) and (max-width: 768px) {
+  .card-container {
+      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .button-container {
+      flex-direction: column;
+  }
+
+  .card {
+      max-width: 100%;
+  }
+
+  .filter-container {
+    flex-direction: column;
+  }
+}
+
+/* Para móviles */
+@media (max-width: 500px) {
+  .header__title {
+      font-size: 1.5em;
+  }
+
+  .header__description {
+      font-size: 1em;
+  }
+
+  .button-small {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .card-container{
+    grid-template-columns: 1fr;
+  }
 }
