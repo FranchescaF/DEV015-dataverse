@@ -1,6 +1,4 @@
-import { sortData} from './dataFunctions.js';
-import { filterData} from './dataFunctions.js';
-import { metricsData} from './dataFunctions.js';
+import { filterData, sortData, metricsData} from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
