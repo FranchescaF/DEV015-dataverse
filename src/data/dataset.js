@@ -4,7 +4,7 @@ export default [
   "name": "Coffee Prince",
   "shortDescription": "Historia de amor en una cafetería.",
   "description": "Coffee Prince es una serie que sigue a Go Eun-chan, una joven que se hace pasar por un hombre para trabajar en una cafetería. Choi Han-kyul, el dueño de la cafetería, no sabe que Eun-chan es una mujer y comienza a desarrollar sentimientos por ella, lo que le causa mucha confusión. La serie explora temas de identidad, amor y aceptación, ofreciendo tanto momentos divertidos como conmovedores. La dinámica entre los personajes principales y el desarrollo de sus relaciones es el corazón de esta encantadora comedia romántica.",
-  "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/0db53df3e1f333851d5a8b01c42c330780062963d2939f457befb33523591cb6.jpg",
+  "imageUrl": "https://m.media-amazon.com/images/M/MV5BYTI2ODliYjYtNWQwZS00OWNlLWFiYTEtNDNhOTgyMjRkNTE2XkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_FMjpg_UX1000_.jpg",
   "facts": {
     "gender": "Drama, Comedia Romántica",
     "year": 2007,
@@ -79,7 +79,7 @@ export default [
   "name": "Reply 1988",
   "shortDescription": "La vida de cinco familias en 1988.",
   "description": "Reply 1988 es una serie nostálgica que sigue la vida de cinco amigos y sus familias en un vecindario de Seúl durante la década de 1980. La serie mezcla comedia, drama y romance, mostrando los altibajos de la adolescencia y la transición a la adultez. A través de su narrativa cálida y realista, explora las relaciones familiares, la amistad y el primer amor, capturando la esencia de la época. Cada personaje tiene su propio viaje personal, haciendo que los espectadores se conecten emocionalmente con sus historias y recuerdos compartidos.",
-  "imageUrl": "https://bestofkorea.com/wp-content/uploads/2021/01/reply-1988-main5.jpg",
+  "imageUrl": "https://i.pinimg.com/originals/9a/b9/60/9ab9606eea3331370af2680e593a5734.jpg",
   "facts": {
     "gender": "Comedia Romántica, Drama, Familiar",
     "year": 2016,
@@ -94,7 +94,7 @@ export default [
   "name": "Descendants of the Sun",
   "shortDescription": "Un soldado y una doctora se enamoran en zona de conflicto.",
   "description": "Descendants of the Sun sigue la historia de amor entre Yoo Si-jin, un capitán de las fuerzas especiales, y Kang Mo-yeon, una médica. Sus caminos se cruzan en una misión de paz en un país devastado por la guerra, donde enfrentan juntos desafíos tanto personales como profesionales. La serie destaca por su emocionante combinación de romance, acción y drama, explorando temas de sacrificio, deber y el impacto de las decisiones en tiempos de crisis. La química entre los protagonistas y las impresionantes escenas de acción han capturado a audiencias de todo el mundo.",
-  "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/c33978a96dc27be7a8a6154aeea39186d9a5ac906a4d5311b6470ac301ce6dab.jpg",
+  "imageUrl": "https://image.tmdb.org/t/p/original/1T3RFIarUIOz4X7czdoJEtVvFg3.jpg",
   "facts": {
     "gender": "Acción, Comedia Romántica, Drama",
     "year": 2016,
@@ -124,7 +124,7 @@ export default [
   "name": "Weightlifting Fairy Kim Bok-joo",
   "shortDescription": "Vida de una levantadora de pesas.",
   "description": "Weightlifting Fairy Kim Bok-joo sigue la vida de Kim Bok-joo, una talentosa levantadora de pesas universitaria, mientras navega por los desafíos del deporte, la amistad y el amor. En el camino, desarrolla una relación especial con Jung Joon-hyung, un nadador con su propio conjunto de problemas. La serie es conocida por su enfoque refrescante y realista de los jóvenes que persiguen sus sueños, abordando temas de autoestima, perseverancia y crecimiento personal. Con momentos cómicos y conmovedores, es una historia inspiradora sobre la superación personal y el poder del apoyo mutuo.",
-  "imageUrl": "https://1.vikiplatform.com/c/32634c/weightlifting-fairy_1560x872.jpg?x=b",
+  "imageUrl": "https://image.tmdb.org/t/p/original/4CrTjZ5MYdF5dtSockIStCkiX5C.jpg",
   "facts": {
     "gender": "Comedia Romántica, Deportes",
     "year": 2016,
@@ -139,7 +139,7 @@ export default [
   "name": "Strong Woman Do Bong-soon",
   "shortDescription": "Mujer con fuerza sobrehumana trabaja de guardaespaldas.",
   "description": "Strong Woman Do Bong-soon cuenta la historia de Do Bong-soon, una joven con una fuerza sobrehumana heredada de las mujeres de su familia. Sueña con diseñar videojuegos, pero su vida da un giro cuando es contratada como guardaespaldas de Ahn Min-hyuk, un CEO de una empresa de videojuegos que está siendo amenazado. Mientras lucha contra el crimen en su vecindario y navega por un complicado triángulo amoroso, Bong-soon aprende a aceptar y usar sus habilidades para el bien. La serie combina comedia, romance y acción de manera encantadora y entretenida.",
-  "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/40c1eb008ea7d9d50779854f67150085f8766c42e82e1594f09793835994a5ff.jpg",
+  "imageUrl": "https://image.tmdb.org/t/p/original/vLAyVkXMNYu0O9WpSV0UlsHSIKz.jpg",
   "facts": {
     "gender": "Fantasía, Comedia Romántica",
     "year": 2017,
@@ -169,7 +169,7 @@ export default [
   "name": "Mr. Sunshine",
   "shortDescription": "Joven coreano regresa como soldado.",
   "description": "Mr. Sunshine sigue a Eugene Choi, un hombre nacido en la esclavitud en Joseon que escapa a Estados Unidos y regresa años después como soldado. Ambientada en los albores del siglo XX, la serie narra su lucha personal y política mientras enfrenta a los colonizadores japoneses y lidia con su amor por Go Ae-shin, una noble patriota. La serie es conocida por su rica producción, guión impresionante y exploración de temas históricos y emocionales. Mr. Sunshine es un épico drama que mezcla romance, acción y elementos históricos de manera magistral.",
-  "imageUrl": "https://www.lavanguardia.com/peliculas-series/images/serie/backdrop/2018/7/w1280/iFPMDgCKntxjW7X13S8Vfic3nzJ.jpg",
+  "imageUrl": "https://i.pinimg.com/736x/50/38/f4/5038f4df4b85db1d4d1a15522f9d6281.jpg",
   "facts": {
     "gender": "Histórico, Romance, Drama",
     "year": 2018,
@@ -214,7 +214,7 @@ export default [
   "name": "Start-Up",
   "shortDescription": "Sueños y desafíos en el mundo de las startups tecnológicas.",
   "description": "Start-Up se centra en la gran actriz coreana Seo Dal-mi, una joven con grandes sueños de convertirse en una empresaria exitosa. En el competitivo mundo de las startups, Dal-mi se encuentra con Nam Do-san, un talentoso programador, y juntos intentan hacer realidad sus aspiraciones. El drama explora temas de innovación, amistad y romance, mostrando los altibajos de la vida empresarial y personal en el dinámico entorno de las startups, y destacando la importancia de la perseverancia y el trabajo en equipo.",
-  "imageUrl": "https://0.soompi.io/wp-content/uploads/2020/09/01225007/Start-Up1.jpg",
+  "imageUrl": "https://i.pinimg.com/originals/a5/21/30/a5213041209095060cd2c94e460d0e5f.jpg",
   "facts": {
     "gender": "Comedia Romántica, Drama",
     "year": 2020,
@@ -229,7 +229,7 @@ export default [
   "name": "Hospital Playlist",
   "shortDescription": "Cinco médicos amigos equilibran trabajo, amistad y música.",
   "description": "Hospital Playlist sigue la vida de cinco médicos que han sido grandes amigos desde la epoca de la universidad y ahora trabajan juntos en el mismo hospital. El drama explora sus desafíos profesionales y personales, incluyendo las relaciones familiares, románticas y las luchas diarias en el entorno médico. Con momentos de comedia, drama y música, este drama ofrece una visión conmovedora y humana de la vida de los médicos y sus pacientes, resaltando la importancia de la amistad y el apoyo mutuo.",
-  "imageUrl": "https://koreabyme.com/wp-content/uploads/2021/04/68738-1920x1355.jpg",
+  "imageUrl": "https://0.soompi.io/wp-content/uploads/2021/05/20104412/Hospital-Playlist1.jpeg",
   "facts": {
     "gender": "Drama, Comedia Romántica",
     "year": 2020,
@@ -259,7 +259,7 @@ export default [
   "name": "Squid Game",
   "shortDescription": "Participantes compiten en juegos mortales por un premio millonario.",
   "description": "Squid Game sigue a un grupo de personas con muchos problemas financieros y economicos que aceptan participar en una serie de juegos infantiles con consecuencias mortales, en busca de un premio multimillonario. Cada juego revela las profundidades de la desesperación humana y la lucha por la supervivencia. Este thriller psicológico y social explora temas de deuda, moralidad y la naturaleza humana, convirtiéndose en un fenómeno global por su trama intensa y personajes complejos, capturando la atención y el debate mundial.",
-  "imageUrl": "https://images.hdqwalls.com/wallpapers/squid-game-3b.jpg",
+  "imageUrl": "https://0.soompi.io/wp-content/uploads/2021/08/23110511/squid-game.jpeg",
   "facts": {
     "gender": "Thriller, Drama",
     "year": 2021,
@@ -274,7 +274,7 @@ export default [
   "name": "Hometown Cha-Cha-Cha",
   "shortDescription": "Una dentista de ciudad se muda a un pueblo costero y encuentra el amor.",
   "description": "Hometown Cha-Cha-Cha cuenta la historia de Yoon Hye-jin, una dentista de ciudad que se muda a un pintoresco pueblo costero. Allí conoce a Hong Du-sik, un hombre talentoso y querido por los habitantes. A medida que Hye-jin se adapta a la vida rural, desarrolla una relación especial con Du-sik, enfrentando desafíos personales y comunitarios. Este drama es apreciado por su calidez, humor y la representación encantadora de la vida en un pequeño pueblo, destacando la belleza de las relaciones humanas.",
-  "imageUrl": "https://kdramadiary.com/wp-content/uploads/2021/10/Hometown-Cha-Cha-Cha-review-kdramadiary.jpg",
+  "imageUrl": "https://image.tmdb.org/t/p/original/v4WmA90kL8MFa9lySXFUjtwfgC2.jpg",
   "facts": {
     "gender": "Comedia Romántica",
     "year": 2021,
@@ -319,7 +319,7 @@ export default [
   "name": "Twenty-Five Twenty-One",
   "shortDescription": "Una esgrimista y un reportero enfrentan sueños y desafíos.",
   "description": "Twenty-Five Twenty-One sigue a Na Hee-do, una joven esgrimista con grandes aspiraciones, y Baek Yi-jin, un reportero en formación, quienes se conocen en medio de la crisis financiera asiática. A medida que Hee-do persigue sus sueños deportivos y Yi-jin lucha por establecer su carrera, desarrollan una amistad y un amor que se enfrenta a múltiples desafíos. Este drama aborda temas de juventud, perseverancia y amor, destacando por su narrativa emotiva y personajes bien desarrollados, inspirando a la audiencia con sus historias de lucha y éxito.",
-  "imageUrl": "https://kdramadiary.com/wp-content/uploads/2022/03/twenty-five-twenty-one-kdramadiary-1-4.jpg",
+  "imageUrl": "https://m.media-amazon.com/images/I/71Ae-OO0zyL._AC_UF894,1000_QL80_.jpg",
   "facts": {
     "gender": "Romance, Drama",
     "year": 2022,

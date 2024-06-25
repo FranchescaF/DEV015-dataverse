@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2 {
+h2 {
   color: #511f52; /* Títulos y Encabezados */
   font-family: 'Montserrat', sans-serif;
 }
@@ -29,7 +29,7 @@ a:hover {
 }
 
 /*Estilo del header*/
-.header {
+header {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -39,7 +39,7 @@ a:hover {
   text-align: center;
 }
 
-.header__title{
+h1{
   font-size: 96px;
   font-weight: 900;
   line-height: 100px;
@@ -47,7 +47,8 @@ a:hover {
   margin: 0;
   text-align: center;
   z-index: 1000;
-
+  color: #511f52; /* Títulos y Encabezados */
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header__description{
