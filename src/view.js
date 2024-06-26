@@ -3,7 +3,7 @@ export const renderItems = (data) => {
 
   data.forEach(item => {
     const liElement = document.createElement("li");
-    liElement.classList.add("card");
+    liElement.classList.add("cardli");
     liElement.setAttribute("itemscope", "");
     liElement.setAttribute("itemtype", "https://schema.org/CreativeWork");
     liElement.setAttribute("data-id", item.id);

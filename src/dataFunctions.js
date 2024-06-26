@@ -25,6 +25,12 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 }
 
+export const computeStats = (data) => {
+  const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
+  const average = (totalChapters / data.length).toFixed(2);
+  return average;
+};
+
 export const metricsData = (data) => {
   const dataCopy = data.map((obj) => obj);
   return dataCopy.reduce((topObjects, currentObject) => {
@@ -34,4 +40,6 @@ export const metricsData = (data) => {
         parseFloat(a.facts["percentageOfUsers"])
     ).slice(0, 3);
   }, []);
+
+
 }
