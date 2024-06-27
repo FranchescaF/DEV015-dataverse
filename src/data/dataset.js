@@ -152,7 +152,7 @@ export default [
 {
   "id": "my-mister",
   "name": "My Mister",
-  "shortDescription": "Hombre y una joven enfrentan dificultades juntos.",
+  "shortDescription": "Una joven agobiada por la vida encuentra sosiego en un hombre de mediana edad.",
   "description": "My Mister es una serie conmovedora que sigue a Park Dong-hoon, un ingeniero de mediana edad que enfrenta dificultades tanto en su vida personal como profesional, y Lee Ji-an, una joven cargada de deudas y responsabilidades. A través de sus interacciones y luchas compartidas, encuentran consuelo y apoyo mutuo. La serie aborda temas de soledad, sacrificio y la búsqueda de la felicidad en medio de las adversidades. Con actuaciones poderosas y una narrativa profunda, My Mister es un estudio introspectivo de la naturaleza humana y las conexiones significativas que pueden surgir en los momentos más oscuros.",
   "imageUrl": "https://substack-post-media.s3.amazonaws.com/public/images/6be551b3-77c8-4b73-a53a-0af9b1763ae1_1472x2186.jpeg",
   "facts": {
@@ -167,7 +167,7 @@ export default [
 {
   "id": "mr-sunshine",
   "name": "Mr. Sunshine",
-  "shortDescription": "Joven coreano regresa como soldado.",
+  "shortDescription": "Un joven regresa a Corea en un momento decisivo en la historia.",
   "description": "Mr. Sunshine sigue a Eugene Choi, un hombre nacido en la esclavitud en Joseon que escapa a Estados Unidos y regresa años después como soldado. Ambientada en los albores del siglo XX, la serie narra su lucha personal y política mientras enfrenta a los colonizadores japoneses y lidia con su amor por Go Ae-shin, una noble patriota. La serie es conocida por su rica producción, guión impresionante y exploración de temas históricos y emocionales. Mr. Sunshine es un épico drama que mezcla romance, acción y elementos históricos de manera magistral.",
   "imageUrl": "https://i.pinimg.com/736x/50/38/f4/5038f4df4b85db1d4d1a15522f9d6281.jpg",
   "facts": {
