@@ -2,30 +2,37 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base de datos de Kdramas</title>
     <meta name="author" content="Fatima Zelaya & Karen Mendoza" />
-    <meta name="description"
-      content="Manejo de base de datos de 24 Items, diseño responsivo de una página web interactiva." />
-    <meta name="keywords" content="proyecto, html, css, base de datos, Laboratoria, Bootcamp, diseño responsivo, página web" />
+    <meta
+      name="description"
+      content="Manejo de base de datos de 24 Items, diseño responsivo de una página web interactiva."
+    />
+    <meta
+      name="keywords"
+      content="proyecto, html, css, base de datos, Laboratoria, Bootcamp, diseño responsivo, página web"
+    />
     <link rel="stylesheet" href="style.css" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
   </head>
   <body>
-    <header class="header" role="banner">
-
-      <h1 class="header__title">Kdrama Database</h1>
+    <header role="banner">
+      <h1>Kdrama Database</h1>
       <p class="header__description">
-        ¡Hola! ¿Estás buscando el Kdrama perfecto para maratonear este fin de semana? ¡No busques más! En Kdrama Database,
-         te ofrecemos una vasta colección de Kdramas que podrás filtrar fácilmente por género, año de lanzamiento,
-          y número de episodios. Sumérgete en emocionantes historias de romance, drama, comedia, fantasía, ciencia
-           ficción y más. Ya seas un veterano en el mundo de los Kdramas o un recién llegado, aquí encontrarás
-            recomendaciones adaptadas a tus gustos. ¡Explora y descubre tu próximo Kdrama favorito con nosotros!
+        ¡Hola! ¿Estás buscando el Kdrama perfecto para maratonear este fin de
+        semana? ¡No busques más! En Kdrama Database, te ofrecemos una vasta
+        colección de Kdramas que podrás filtrar fácilmente por género, año de
+        lanzamiento, y número de episodios. Sumérgete en emocionantes historias
+        de romance, drama, comedia, fantasía, ciencia ficción y más. Ya seas un
+        veterano en el mundo de los Kdramas o un recién llegado, aquí
+        encontrarás recomendaciones adaptadas a tus gustos. ¡Explora y descubre
+        tu próximo Kdrama favorito con nosotros!
       </p>
       </header>
       <!--Nav-->
@@ -34,17 +41,17 @@
         <div class="filter-container__gender">
           <label for="filter-gender">Filtrar por género:</label>
           <select id="filter-gender" data-testid="select-filter" name="gender">
-              <option value="all">Todos</option>
-              <option value="Comedia Romántica">Comedia Romántica</option>
-              <option value="Drama">Drama</option>
-              <option value="Romance">Romance</option>
-              <option value="Fantasía">Fantasía</option>
-              <option value="Ciencia ficción">Ciencia ficción</option>
-              <option value="Acción">Acción</option>
-              <option value="Thriller">Thriller</option>
-              <option value="Crimen">Crimen</option>
-              <option value="Histórico">Histórico</option>
-              <option value="Familiar">Familiar</option>
+            <option value="all">Todos</option>
+            <option value="Comedia Romántica">Comedia Romántica</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="Fantasía">Fantasía</option>
+            <option value="Ciencia ficción">Ciencia ficción</option>
+            <option value="Acción">Acción</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Crimen">Crimen</option>
+            <option value="Histórico">Histórico</option>
+            <option value="Familiar">Familiar</option>
           </select>
         </div>
 
@@ -61,7 +68,7 @@
             <option value="2017">2017</option>
             <option value="2018">2018</option>
             <option value="2019">2019</option>
-            <option value="2020" >2020</option>
+            <option value="2020">2020</option>
             <option value="2021">2021</option>
             <option value="2022">2022</option>
             <option value="2023">2023</option>
@@ -71,7 +78,11 @@
         <!--Sección 3: Selección de Cápitulos-->
         <div class="filter-container__chapters">
           <label for="filter-chapters">Seleccionar por Cápitulos:</label>
-          <select name="chapters" id="filter-chapters" data-testid="select-filter-3">
+          <select
+            name="chapters"
+            id="filter-chapters"
+            data-testid="select-filter-3"
+          >
             <option value="all">Todos</option>
             <option value="9">9</option>
             <option value="12">12</option>
