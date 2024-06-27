@@ -8,7 +8,8 @@ export default [
   "facts": {
     "gender": "Drama, Comedia Romántica",
     "year": 2007,
-    "chapters": 17
+    "chapters": 17,
+    "audiencePercentage": 27.8
   },
   "extraInfo": {
     "imageSource": " "
@@ -23,7 +24,8 @@ export default [
   "facts": {
     "gender": "Drama, Comedia Romántica",
     "year": 2009,
-    "chapters": 25
+    "chapters": 25,
+    "audiencePercentage": 35.5
   },
   "extraInfo": {
     "imageSource": " "
@@ -38,7 +40,8 @@ export default [
   "facts": {
     "gender": "Drama, Comedia Romántica, Ciencia ficción, Fantasía",
     "year": 2011,
-    "chapters": 20
+    "chapters": 20,
+    "audiencePercentage": 31.4
   },
   "extraInfo": {
     "imageSource": " "
@@ -53,7 +56,8 @@ export default [
   "facts": {
     "gender": "Acción, Drama, Crimen",
     "year": 2011,
-    "chapters": 20
+    "chapters": 20,
+    "audiencePercentage": 19.2
   },
   "extraInfo": {
     "imageSource": " "
@@ -68,7 +72,8 @@ export default [
   "facts": {
     "gender": "Histórico, Romance",
     "year": 2012,
-    "chapters": 20
+    "chapters": 20,
+    "audiencePercentage": 33
   },
   "extraInfo": {
     "imageSource": " "
@@ -83,7 +88,8 @@ export default [
   "facts": {
     "gender": "Comedia Romántica, Drama, Familiar",
     "year": 2016,
-    "chapters": 20
+    "chapters": 20,
+    "audiencePercentage": 18.8
   },
   "extraInfo": {
     "imageSource": " "
@@ -98,7 +104,8 @@ export default [
   "facts": {
     "gender": "Acción, Comedia Romántica, Drama",
     "year": 2016,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 38.8
   },
   "extraInfo": {
     "imageSource": " "
@@ -113,7 +120,8 @@ export default [
   "facts": {
     "gender": "Fantasía, Comedia Romántica, Drama",
     "year": 2016,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 20.5
   },
   "extraInfo": {
     "imageSource": " "
@@ -128,7 +136,8 @@ export default [
   "facts": {
     "gender": "Comedia Romántica, Deportes",
     "year": 2016,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 5.5
   },
   "extraInfo": {
     "imageSource": " "
@@ -143,7 +152,8 @@ export default [
   "facts": {
     "gender": "Fantasía, Comedia Romántica",
     "year": 2017,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 8.0
   },
   "extraInfo": {
     "imageSource": " "
@@ -158,7 +168,8 @@ export default [
   "facts": {
     "gender": "Drama",
     "year": 2018,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 4.9
   },
   "extraInfo": {
     "imageSource": " "
@@ -173,7 +184,8 @@ export default [
   "facts": {
     "gender": "Histórico, Romance, Drama",
     "year": 2018,
-    "chapters": 24
+    "chapters": 24,
+    "audiencePercentage": 15.8
   },
   "extraInfo": {
     "imageSource": " "
@@ -188,7 +200,8 @@ export default [
   "facts": {
     "gender": "Comedia Romántica, Drama",
     "year": 2019,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 21.7
   },
   "extraInfo": {
     "imageSource": " "
@@ -203,7 +216,8 @@ export default [
   "facts": {
     "gender": "Drama, Romance",
     "year": 2020,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 11.8
   },
   "extraInfo": {
     "imageSource": " "
@@ -218,7 +232,8 @@ export default [
   "facts": {
     "gender": "Comedia Romántica, Drama",
     "year": 2020,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 4.6
   },
   "extraInfo": {
     "imageSource": " "
@@ -233,7 +248,8 @@ export default [
   "facts": {
     "gender": "Drama, Comedia Romántica",
     "year": 2020,
-    "chapters": 12
+    "chapters": 12,
+    "audiencePercentage": 10
   },
   "extraInfo": {
     "imageSource": " "
@@ -248,7 +264,8 @@ export default [
   "facts": {
     "gender": "Drama, Acción",
     "year": 2021,
-    "chapters": 20
+    "chapters": 20,
+    "audiencePercentage": 11.4
   },
   "extraInfo": {
     "imageSource": " "
@@ -263,7 +280,8 @@ export default [
   "facts": {
     "gender": "Thriller, Drama",
     "year": 2021,
-    "chapters": 9
+    "chapters": 9,
+    "audiencePercentage": 11.1
   },
   "extraInfo": {
     "imageSource": " "
@@ -278,7 +296,8 @@ export default [
   "facts": {
     "gender": "Comedia Romántica",
     "year": 2021,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 12.7
   },
   "extraInfo": {
     "imageSource": " "
@@ -293,7 +312,8 @@ export default [
   "facts": {
     "gender": "Drama, Thriller",
     "year": 2023,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 6.3
   },
   "extraInfo": {
     "imageSource": " "
@@ -308,7 +328,8 @@ export default [
   "facts": {
     "gender": "Comedia Romántica",
     "year": 2022,
-    "chapters": 12
+    "chapters": 12,
+    "audiencePercentage": 4.9
   },
   "extraInfo": {
     "imageSource": " "
@@ -323,7 +344,8 @@ export default [
   "facts": {
     "gender": "Romance, Drama",
     "year": 2022,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 4.5
   },
   "extraInfo": {
     "imageSource": " "
@@ -338,7 +360,8 @@ export default [
   "facts": {
     "gender": "Drama, Legal, Romance",
     "year": 2022,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 12.2
   },
   "extraInfo": {
     "imageSource": " "
@@ -353,7 +376,8 @@ export default [
   "facts": {
     "gender": "Histórico, Drama",
     "year": 2022,
-    "chapters": 16
+    "chapters": 16,
+    "audiencePercentage": 3.8
   },
   "extraInfo": {
     "imageSource": ""

@@ -25,10 +25,37 @@ export const sortData = (data, sortBy, sortOrder) => {
   }
 }
 
-export const computeStats = (data) => {
+export let computeStats = (data) => {
+  // Calcular el promedio de capítulos
   const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
-  const average = (totalChapters / data.length).toFixed(2);
-  return average;
+  const averageChapters = (totalChapters / data.length);
+  const minValue = Math.floor(averageChapters);
+
+  // Calcular el género más común
+  const genreCount = {};
+  data.forEach(item => {
+    if (genreCount[item.facts.gender]) {
+      genreCount[item.facts.gender]++;
+    } else {
+      genreCount[item.facts.gender] = 1;
+    }
+  });
+  const mostCommonGenre = Object.keys(genreCount).reduce((a, b) => genreCount[a] > genreCount[b] ? a : b);
+
+  // Encontrar el dorama con el mayor porcentaje de audiencia
+  let highestAudienceDorama = data[0];
+  data.forEach(item => {
+    if (item.facts.audiencePercentage > highestAudienceDorama.facts.audiencePercentage) {
+      highestAudienceDorama = item;
+    }
+  });
+
+  return {
+    minValue,
+    mostCommonGenre,
+    highestAudienceDorama
+  };
+
 };
 
 export const metricsData = (data) => {
@@ -36,8 +63,8 @@ export const metricsData = (data) => {
   return dataCopy.reduce((topObjects, currentObject) => {
     return [...topObjects, currentObject].sort(
       (a, b) =>
-        parseFloat(b.facts["percentageOfUsers"]) -
-        parseFloat(a.facts["percentageOfUsers"])
+        parseFloat(b.facts["audiencePercentage"]) -
+        parseFloat(a.facts["audiencePercentage"])
     ).slice(0, 3);
   }, []);
 

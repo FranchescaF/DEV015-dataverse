@@ -24,9 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderSelect = document.querySelector("#order-select");
   const clearButton = document.querySelector('[data-testid="button-clear"]');
   const metricsButton = document.querySelector(".metrics");
-  const calculateButton = document.querySelector('#button-calculate');
-  const averageContainer = document.getElementById('average-container');
-  const averageResult = document.getElementById('average-result');
+  const calculateButton = document.getElementById("button-calculate");
+  const averageContainer = document.getElementById("average-container");
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
@@ -70,10 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     filterSelectChapters.value = 'all';
     orderSelect.value = 'all';
     displayCards(data);
-    averageContainer.innerHTML = '';
-    averageContainer.style.display = 'none';
-
-    
+    averageContainer.classList.remove('show');
   });
 
   metricsButton.addEventListener("click", () => {
@@ -82,9 +78,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   calculateButton.addEventListener("click", () => {
-    const average = computeStats(data);
-    averageContainer.innerHTML = `Promedio de capítulos: ${average}`;
-    averageContainer.style.display = 'block'; 
-    
+    const stats = computeStats(data);
+    const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
+
+    averageContainer.innerHTML = `
+      <p>Promedio de capítulos: ${minValue}</p>
+      <p>Género más promocionado: ${mostCommonGenre}</p>
+      <p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
+    `;
+    averageContainer.classList.add('show');
   });
 });
