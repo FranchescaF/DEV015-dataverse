@@ -98,6 +98,35 @@ h1{
 
 }
 
+.button-average {
+  padding: 10px 20px;
+  font-size: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  background-color: #ae7eae;
+  color: #000000; /* Color del Texto del Botón */
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.average-container {
+  border: 1px solid #000; /* Border color */
+  background-color: rgba(0, 0, 0, 0.1); /* Background color */
+  padding: 10px;
+  margin-top: 20px;
+  display: none; /* Hidden by default */
+}
+
+#average-result {
+  margin: 0;
+  font-size: 1.2em;
+  color: #000000; /* Texto verde oscuro */
+}
+
+
+
 .button-clear, .metrics {
   padding: 10px 20px;
   font-size: 15px;
@@ -125,7 +154,7 @@ h1{
   padding: 20px;
 }
 
-.card-container li {
+.card-container li.cardli {
   list-style-type: none;
   background-color: #f9edf9; /* Fondo de las Tarjetas */
   border: 4px solid #a987ab; /* Borde de las Tarjetas */
@@ -173,7 +202,7 @@ h1{
   object-fit: cover;
 }
 /*sombrear la tarjeta al pasar el mouse */
-li:hover{
+li.cardli:hover{
 background:#cfb3d3;;
 }
 

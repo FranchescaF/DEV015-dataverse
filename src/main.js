@@ -1,4 +1,4 @@
-import { filterData, sortData, metricsData} from './dataFunctions.js';
+import { filterData, sortData, metricsData,computeStats} from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderSelect = document.querySelector("#order-select");
   const clearButton = document.querySelector('[data-testid="button-clear"]');
   const metricsButton = document.querySelector(".metrics");
+  const calculateButton = document.querySelector('#button-calculate');
+  const averageContainer = document.getElementById('average-container');
+  const averageResult = document.getElementById('average-result');
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
@@ -67,10 +70,21 @@ document.addEventListener("DOMContentLoaded", () => {
     filterSelectChapters.value = 'all';
     orderSelect.value = 'all';
     displayCards(data);
+    averageContainer.innerHTML = '';
+    averageContainer.style.display = 'none';
+
+    
   });
 
   metricsButton.addEventListener("click", () => {
     const metricsItems = metricsData(data);
     displayCards(metricsItems);
+  });
+
+  calculateButton.addEventListener("click", () => {
+    const average = computeStats(data);
+    averageContainer.innerHTML = `Promedio de capítulos: ${average}`;
+    averageContainer.style.display = 'block'; 
+    
   });
 });
