@@ -67,17 +67,18 @@ h1{
 .filter-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
   gap: 10px;
   padding: 10px;
   color: rgb(0, 0, 0);
 }
 
-.filter-container div {
+.filter-row, .button-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 150px;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .filter-container select {
@@ -120,18 +121,25 @@ h1{
   font-family: 'Poppins', sans-serif;
 }
 
-.average-container {
-  border: 1px solid #000; /* Border color */
-  background-color: rgba(0, 0, 0, 0.1); /* Background color */
-  padding: 10px;
+/* Estilos iniciales */
+#average-container {
+  display: none;
+  padding: 20px;
+  background-color: #f9edf9; /* Fondo del contenedor de curiosidades */
+  border: 2px solid #a987ab; /* Borde del contenedor */
+  border-radius: 10px;
+  color: #662962; /* Color del texto */
   margin-top: 20px;
-  display: none; /* Hidden by default */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-#average-result {
-  margin: 0;
-  font-size: 1.2em;
-  color: #000000; /* Texto verde oscuro */
+/* Estilos cuando se muestra el contenedor */
+#average-container.show {
+  display: block;
+  opacity: 1;
 }
 
 
@@ -149,7 +157,7 @@ h1{
   font-family: 'Poppins', sans-serif;
 }
 
-.button-clear:hover, .metrics:hover {
+.button-clear:hover, .metrics:hover, .button-average:hover{
   background-color: #d6a4d0; /* Color del Botón al Pasar el Ratón */
 }
 
@@ -214,6 +222,7 @@ h1{
 li.cardli:hover{
 background:#cfb3d3;;
 }
+
 
 /*Estilos para el footer*/
 .footer {
@@ -285,5 +294,10 @@ background:#cfb3d3;;
     width: 100%;
     font-size: 40px;
     line-height: 35px;
+  }
+
+  .filter-row, .button-row {
+    flex-direction: column;
+    align-items: center;
   }
 }
