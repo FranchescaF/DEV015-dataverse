@@ -28,7 +28,7 @@ export const sortData = (data, sortBy, sortOrder) => {
 export const computeStats = (data) => {
   const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
   const average = (totalChapters / data.length).toFixed(2);
-  return average;
+  return Math.floor(average);
 };
 
 export const metricsData = (data) => {

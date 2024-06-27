@@ -27,6 +27,7 @@
            ficción y más. Ya seas un veterano en el mundo de los Kdramas o un recién llegado, aquí encontrarás
             recomendaciones adaptadas a tus gustos. ¡Explora y descubre tu próximo Kdrama favorito con nosotros!
       </p>
+      </header>
       <!--Nav-->
       <nav class="filter-container" id="filter-container" role="navigation">
         <!--Sección 1: Filtra por género-->
@@ -91,11 +92,13 @@
             <option value="desc">Z-A</option>
           </select>
         </div>
+        </nav>
 
+        <nav class="block-buttons">
         <!--Botón 1: Limpiar-->
         <button class="button-clear" data-testid="button-clear">Limpiar</button>
 
-        <!--Botón 2: Calcular promedio de capitulos-->
+        <!--Botón 2: Calcular-->
         <button class="button-average" id="button-calculate" data-testid="button-calculate">Datos curiosos</button>
         <div id="average-container" class="average-container" >
           <p id="average-result"></p>
@@ -104,8 +107,7 @@
         <!--Botón 2: Métricas Ranking-->
         <button class="metrics">Ranking</button>
       </nav>
-    </header>
-    <main class="main" role="main">
+      <main class="main" role="main">
       <div id="root" class="card-container"></div>
     </main>
     <footer class="footer" role="contentinfo">
