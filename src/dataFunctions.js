@@ -28,6 +28,7 @@ export const sortData = (data, sortBy, sortOrder) => {
 export let computeStats = (data) => {
   // Calcular el promedio de capítulos
   const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
+
   const averageChapters = (totalChapters / data.length);
   const minValue = Math.floor(averageChapters);
 

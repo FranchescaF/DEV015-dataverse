@@ -98,7 +98,16 @@ h1{
   color: #511f52; /* Color de las Etiquetas */
 
 }
+.block-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 
+  
+
+}
 .button-average {
   padding: 10px 20px;
   font-size: 15px;
