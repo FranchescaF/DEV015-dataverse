@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #ecd4ea;
   color: #662962;
@@ -114,14 +113,15 @@ h1{
 
 /* Estilos iniciales */
 #average-container {
-  display: none;
   padding: 20px;
   background-color: #f9edf9; /* Fondo del contenedor de curiosidades */
   border: 2px solid #a987ab; /* Borde del contenedor */
   border-radius: 10px;
-  color: #662962; /* Color del texto */
+  color: #000000; /* Color del texto */
   margin-top: 20px;
   text-align: center;
+  width:600px;
+  max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -130,6 +130,7 @@ h1{
 /* Estilos cuando se muestra el contenedor */
 #average-container.show {
   display: block;
+  align-items: center;
   opacity: 1;
 }
 

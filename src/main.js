@@ -77,15 +77,35 @@ document.addEventListener("DOMContentLoaded", () => {
     displayCards(metricsItems);
   });
 
+  //STATS
   calculateButton.addEventListener("click", () => {
+    // Calcular estadísticas
     const stats = computeStats(data);
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
 
-    averageContainer.innerHTML = `
-      <p>Promedio de capítulos: ${minValue}</p>
-      <p>Género más promocionado: ${mostCommonGenre}</p>
-      <p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
-    `;
+    // Limpiar el contenedor antes de agregar nuevas estadísticas
+    averageContainer.innerHTML = '';
+
+    // Crear elementos para mostrar las estadísticas
+    const divChapters = document.createElement('div');
+    divChapters.classList.add('stats');
+    divChapters.innerHTML = `<p>Promedio de capítulos: ${minValue}</p>`;
+
+    const divGenre = document.createElement('div');
+    divGenre.classList.add('stats');
+    divGenre.innerHTML = `<p>Género más promocionado: ${mostCommonGenre}</p>`;
+
+    const divAudience = document.createElement('div');
+    divAudience.classList.add('stats');
+    divAudience.innerHTML = `<p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>`;
+
+    // Agregar los elementos al contenedor
+    averageContainer.appendChild(divChapters);
+    averageContainer.appendChild(divGenre);
+    averageContainer.appendChild(divAudience);
+
+    // Mostrar el contenedor
     averageContainer.classList.add('show');
   });
+
 });
