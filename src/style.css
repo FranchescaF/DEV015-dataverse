@@ -106,14 +106,42 @@ h1{
   border: none;
   border-radius: 10px;
   border: 1px solid #ffffff;
-  background-color: #ae7eae;
+  background-color: #e6d3f2;
   color: #000000; /* Color del Texto del Botón */
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
 }
 
+.block-average{
+  display: flex;
+  justify-content: center; /* Espacio entre los contenedores */
+  align-items: center; /* Alineación central de los contenedores */
+  gap: 20px; /* Espacio entre los contenedores */
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Estilos iniciales */
 #average-container {
+  display: none;
+  padding: 40px;
+  background-color: #f9edf9; /* Fondo del contenedor de curiosidades */
+  border: 2px solid #a987ab; /* Borde del contenedor */
+  border-radius: 10px;
+  color: #662962; /* Color del texto */
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  height: 150px;
+  width: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  font-size: 1em; 
+ }
+#average-container1 {
   display: none;
   padding: 20px;
   background-color: #f9edf9; /* Fondo del contenedor de curiosidades */
@@ -125,12 +153,51 @@ h1{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transition: opacity 0.5s ease;
+  height: 150px;
+  width: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  font-size: 1em; 
+
+
+}
+#average-container2 {
+  display: none;
+  padding: 20px;
+  background-color: #f9edf9; /* Fondo del contenedor de curiosidades */
+  border: 2px solid #a987ab; /* Borde del contenedor */
+  border-radius: 10px;
+  color: #662962; /* Color del texto */
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  height: 150px;
+  width: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; 
+  font-size: 1em; 
+
+  
+
 }
 
 /* Estilos cuando se muestra el contenedor */
 #average-container.show {
   display: block;
   opacity: 1;
+
+}
+#average-container1.show1 {
+  display: block;
+  opacity: 1;
+
+}
+#average-container2.show2 {
+  display: block;
+  opacity: 1;
+
 }
 
 .button-clear, .metrics {
@@ -149,7 +216,6 @@ h1{
 .button-clear:hover, .metrics:hover, .button-average:hover{
   background-color: #d6a4d0; /* Color del Botón al Pasar el Ratón */
 }
-
 /*Estilo de las cartas*/
 .card-container ul{
   display: flex;
@@ -285,8 +351,30 @@ background:#cfb3d3;;
     line-height: 35px;
   }
 
-  .filter-row, .button-row {
+  .filter-row{
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .button-row {
     flex-direction: column;
     align-items: center;
   }
+  .block-average{
+    flex-direction: column; 
+    align-items: center; 
+
+  }
+  #average-container{
+    margin-bottom: 5px; 
+    width: 60%; 
+  }
+  #average-container1{
+    margin-bottom: 5px; 
+    width: 60%; 
+  }
+  #average-container2{
+    margin-bottom: 5px; 
+    width: 60%; 
+  }
 }
+

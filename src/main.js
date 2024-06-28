@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const metricsButton = document.querySelector(".metrics");
   const calculateButton = document.getElementById("button-calculate");
   const averageContainer = document.getElementById("average-container");
+  const averageContainer1 = document.getElementById("average-container1");
+  const averageContainer2 = document.getElementById("average-container2");
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
@@ -70,6 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
     orderSelect.value = 'all';
     displayCards(data);
     averageContainer.classList.remove('show');
+    averageContainer1.classList.remove('show1');
+    averageContainer2.classList.remove('show2');
+
+
   });
 
   metricsButton.addEventListener("click", () => {
@@ -83,9 +89,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     averageContainer.innerHTML = `
       <p>Promedio de capítulos: ${minValue}</p>
-      <p>Género más promocionado: ${mostCommonGenre}</p>
-      <p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
     `;
     averageContainer.classList.add('show');
+
+    averageContainer1.innerHTML = `
+    <p>Género más promocionado: ${mostCommonGenre}</p>
+  `;
+  averageContainer1.classList.add('show1');
+
+  averageContainer2.innerHTML = `
+  <p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
+`;
+averageContainer2.classList.add('show2');
   });
 });
