@@ -88,18 +88,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
 
     averageContainer.innerHTML = `
-      <p>Promedio de capítulos: ${minValue}</p>
+    <p>Promedio de capítulos de los Kdramas: ${minValue}</p>
     `;
     averageContainer.classList.add('show');
 
     averageContainer1.innerHTML = `
     <p>Género más promocionado: ${mostCommonGenre}</p>
   `;
-  averageContainer1.classList.add('show1');
+    averageContainer1.classList.add('show1');
 
-  averageContainer2.innerHTML = `
-  <p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
-`;
-averageContainer2.classList.add('show2');
+    averageContainer2.innerHTML = `
+    <p>Kdrama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
+  `;
+    averageContainer2.classList.add('show2');
   });
 });
