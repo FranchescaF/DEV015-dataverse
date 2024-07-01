@@ -4,14 +4,43 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #ecd4ea;
   color: #662962;
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
+}
+
+/* Contenedor para las flores */
+#falling-flowers {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Para que no interfiera con otros elementos */
+  z-index: -1; /* Detrás de todo el contenido */
+}
+
+/* Estilo para cada flor */
+.flower {
+  position: absolute;
+  width: 30px; /* Tamaño de la flor */
+  height: 30px;
+  background-image: url('../774832.png'); /* Imagen de la flor */
+  background-size: cover;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+/* Animación de caída */
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
 
 h2 {
@@ -30,11 +59,9 @@ h2 {
 
 /*Estilo del header*/
 header {
-  position: relative;
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  overflow: hidden;
   padding: 20px;
   text-align: center;
 }
@@ -43,22 +70,15 @@ h1{
   font-size: 96px;
   font-weight: 900;
   line-height: 100px;
-  position: relative;
-  margin: 0;
-  text-align: center;
-  z-index: 1000;
-  color: #511f52; /* Títulos y Encabezados */
+  color: #511f52;
   font-family: 'Montserrat', sans-serif;
 }
 
 .header__description{
-  position: relative;
-  text-align: center;
-  z-index: 1000;
   font-size: 1.2em;
   line-height: 30px;
-  color: #000000; /* Color de la Descripción */
-  margin: 10px auto 10px;
+  color: #000000;
+  margin: 10px auto;
 
 }
 
@@ -66,21 +86,15 @@ h1{
 
 .filter-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-self: center;
   flex-direction: column;
   gap: 10px;
-  color: rgb(0, 0, 0);
-
-
-}
+  align-items: center;
+ }
 
 .filter-row, .button-row {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  gap: 5px;
-  padding: 10px;
+  gap: 10px;
 }
 
 .filter-container select {
@@ -91,14 +105,19 @@ h1{
   color: rgb(0, 0, 0);
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-top: 0px;
+  margin:auto;
   width: 250px;
-  max-width: 70%;
+  max-width: 100%;
   display: flex;
+  gap: 10px;
   flex-direction: row;
 }
 
 .filter-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
   margin-bottom: 5px;
   font-weight: bold;
   color: #511f52; /* Color de las Etiquetas */
@@ -112,8 +131,13 @@ h1{
   border: none;
   border-radius: 10px;
   color: #000000; /* Color del Texto del Botón */
+  background-color: #ae7eae;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+}
+
+.button-clear:hover, .metrics:hover, .button-average:hover{
+  background-color: #d6a4d0; /* Color del Botón al Pasar el Ratón */
 }
 
 .block-average{
@@ -129,19 +153,16 @@ h1{
 .average-container {
   display: none;
   padding: 20px;
-  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); /* Gradiente */
-  border: none; /* Sin borde sólido */
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   border-radius: 15px;
-  color: #000000; /* Color del texto */
+  color: #000000;
   margin: auto;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
   width: 300px;
-  max-width: 100%;
   height: 110px;
-  max-height: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -180,9 +201,7 @@ h1{
   font-family: 'Poppins', sans-serif;
 }
 
-.button-clear:hover, .metrics:hover, .button-average:hover{
-  background-color: #d6a4d0; /* Color del Botón al Pasar el Ratón */
-}
+
 /*Estilo de las cartas*/
 .card-container ul{
   display: flex;
@@ -205,7 +224,6 @@ h1{
   box-shadow: 0 4px 8px rgba(239, 236, 241, 0.1);
   text-align: center;
   box-sizing: border-box;
-  /*background-color: rgb(255, 255, 255);*/
   height:630px;
   max-height: 100%;
   
@@ -271,17 +289,16 @@ background:#cfb3d3;;
 /* Para tablets */
 @media (min-width: 501px) and (max-width: 768px) {
   .card-container {
-      flex-direction: column;
-      display: flex;
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
   }
 
   .button-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .card {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .filter-container {
@@ -289,11 +306,8 @@ background:#cfb3d3;;
   }
 
   h1{
-
-    width: 100%;
     font-size: 50px;
     line-height: 46px;
-    margin: 0;
   }
 
   .header__description{
@@ -314,18 +328,20 @@ background:#cfb3d3;;
 
   h1{
     width: 100%;
-    font-size: 40px;
-    line-height: 35px;
+    font-size: 45px;
+    line-height: 40px;
   }
 
   .filter-row{
     flex-direction: column;
-    justify-content: space-between;
     margin: auto;
   }
 
-  .filter-row div{
+  .filter-row label{
+    display: flex;
+    text-align: left;
     justify-content: space-between;
+
   }
 
   .block-average{
@@ -341,6 +357,7 @@ background:#cfb3d3;;
     margin-bottom: 5px;
     width: 60%;
   }
+
   #average-container2{
     margin-bottom: 5px;
     width: 60%;
@@ -360,7 +377,7 @@ background:#cfb3d3;;
     font-size: 14px;
   }
 
-  .button-row{
+  .button-row {
     margin: auto;
   }
 }

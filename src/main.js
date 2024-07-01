@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const averageContainer = document.getElementById("average-container");
   const averageContainer1 = document.getElementById("average-container1");
   const averageContainer2 = document.getElementById("average-container2");
+  const flowerContainer = document.getElementById('falling-flowers');
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
@@ -104,4 +105,30 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
     averageContainer2.classList.add('show2');
   });
+
+  function createFlower() {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+
+    // Posición inicial aleatoria en el eje X
+    flower.style.left = `${Math.random() * 100}vw`;
+
+    // Duración aleatoria de la animación
+    flower.style.animationDuration = `${5 + Math.random() * 5}s`;
+
+    // Retardo aleatorio de la animación
+    flower.style.animationDelay = `${Math.random() * 5}s`;
+
+    // Añadimos la flor al contenedor
+    flowerContainer.appendChild(flower);
+
+    // Eliminamos la flor una vez termina la animación
+    flower.addEventListener('animationend', () => {
+      flowerContainer.removeChild(flower);
+    });
+  }
+
+  // Creamos varias flores de forma periódica
+  setInterval(createFlower, 500); // Ajusta este valor para cambiar la frecuencia
+
 });
