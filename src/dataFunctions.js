@@ -21,14 +21,20 @@ export const sortData = (data, sortBy, sortOrder) => {
   if (sortOrder === "asc") {
     return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
   } else {
-    return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
+    // Ordenar por otros campos
+    dataCopy.sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a[sortBy].localeCompare(b[sortBy]);
+      } else {
+        return b[sortBy].localeCompare(a[sortBy]);
+      }
+    });
   }
 };
 
 export const computeStats = (data) => {
   // Calcular el promedio de capítulos
   const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
-
   const averageChapters = (totalChapters / data.length);
   const minValue = Math.floor(averageChapters);
 
@@ -56,7 +62,6 @@ export const computeStats = (data) => {
     mostCommonGenre,
     highestAudienceDorama
   };
-
 };
 
 export const metricsData = (data) => {
@@ -68,6 +73,4 @@ export const metricsData = (data) => {
         parseFloat(a.facts["audiencePercentage"])
     ).slice(0, 3);
   }, []);
-
-
 }

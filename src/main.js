@@ -33,29 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
-    filteredData = filterData(data, "gender", selectedValueGender);
-    resetSelectIndex(filterSelectYear);
-    resetSelectIndex(filterSelectChapters);
-    resetSelectIndex(orderSelect);
-    displayCards(filteredData);
+    const filterItemsGender = filterData(data, "gender", selectedValueGender);
+    resetSelectIndex(filterSelectYear, filterSelectChapters, orderSelect);
+    displayCards(filterItemsGender);
   });
 
   filterSelectYear.addEventListener("change", (event) => {
     const selectedValueYear = event.target.value;
-    filteredData = filterData(data, "year", selectedValueYear);
-    resetSelectIndex(filterSelectGender);
-    resetSelectIndex(filterSelectChapters);
-    resetSelectIndex(orderSelect);
-    displayCards(filteredData);
+    const filterItemsYear = filterData(data, "year", selectedValueYear);
+    resetSelectIndex(filterSelectGender, filterSelectChapters, orderSelect);
+    displayCards(filterItemsYear);
   });
 
   filterSelectChapters.addEventListener("change", (event) => {
     const selectedValueChapters = event.target.value;
-    filteredData = filterData(data, "chapters", selectedValueChapters);
-    resetSelectIndex(filterSelectGender);
-    resetSelectIndex(filterSelectYear);
-    resetSelectIndex(orderSelect);
-    displayCards(filteredData);
+    const filterItemsChapters = filterData(data, "chapters", selectedValueChapters);
+    resetSelectIndex(filterSelectGender, filterSelectYear, orderSelect);
+    displayCards(filterItemsChapters);
   });
 
   orderSelect.addEventListener("change", (event) => {
@@ -84,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     displayCards(metricsItems);
   });
 
+  //STATS
   calculateButton.addEventListener("click", () => {
     const stats = computeStats(filteredData);
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
