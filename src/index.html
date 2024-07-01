@@ -23,8 +23,8 @@
   </head>
   <body>
     <div id="falling-flowers"></div>
-    <header id="main-header" class="main-header">
-      <h1 id="main-title" class="main-title">Kdrama Database</h1>
+    <header id="header" class="header">
+      <h1 id="title" class="header__title">Kdrama Database</h1>
       <p class="header__description">
         ¡Hola! ¿Estás buscando el Kdrama perfecto para maratonear este fin de
         semana? ¡No busques más! En Kdrama Database, te ofrecemos una vasta
@@ -39,9 +39,9 @@
       <nav class="filter-container" id="filter-container" role="navigation">
         <div class="filter-row">
           <!--Sección 1: Filtra por género-->
-          <div class="filter-container__gender">
-            <label for="filter-gender">Filtrar por género:</label>
-            <select id="filter-gender" class="filter-select" data-testid="select-filter" name="gender">
+          <div class="filter-container">
+            <label for="filter-gender" class="filter-container__label">Filtrar por género:</label>
+            <select id="filter-gender" class="filter-container__select" data-testid="select-filter" name="gender">
               <option value="all">Todos</option>
               <option value="Comedia Romántica">Comedia Romántica</option>
               <option value="Drama">Drama</option>
@@ -57,9 +57,9 @@
           </div>
 
           <!--Sección 2: Selección de año-->
-          <div class="filter-container__year">
-            <label for="filter-year">Seleccionar por Año:</label>
-            <select id="filter-year" class="filter-select" data-testid="select-filter-2" name="year">
+          <div class="filter-container">
+            <label for="filter-year" class="filter-container__label">Filtrar por Año:</label>
+            <select id="filter-year" class="filter-container__select" data-testid="select-filter-2" name="year">
               <option value="all">Todos</option>
               <option value="2007">2007</option>
               <option value="2009">2009</option>
@@ -77,9 +77,9 @@
           </div>
 
           <!--Sección 3: Selección de Cápitulos-->
-          <div class="filter-container__chapters">
-            <label for="filter-chapters">Seleccionar por Cápitulos:</label>
-            <select id="filter-chapters" class="filter-select" data-testid="select-filter-3" name="chapters">
+          <div class="filter-container">
+            <label for="filter-chapters" class="filter-container__label">Filtrar por Cápitulos:</label>
+            <select id="filter-chapters" class="filter-container__select" data-testid="select-filter-3" name="chapters">
               <option value="all">Todos</option>
               <option value="9">9</option>
               <option value="12">12</option>
@@ -92,9 +92,9 @@
           </div>
 
           <!--Sección 4: Selección de Orden-->
-          <div class="filter-container__order">
-            <label for="order-select">Ordenar por: </label>
-            <select id="order-select" class="filter-select" data-testid="sort-order" name="name">
+          <div class="filter-container">
+            <label for="order-select" class="filter-container__label">Ordenar por: </label>
+            <select id="order-select" class="filter-container__select" data-testid="sort-order" name="name">
               <option value="all">Orden</option>
               <option value="asc">A-Z</option>
               <option value="desc">Z-A</option>
@@ -119,7 +119,7 @@
     <main class="main" role="main">
       <div id="root" class="card-container"></div>
     </main>
-    <footer id="main-footer" class="main-footer" role="contentinfo">
+    <footer id="footer" class="footer" role="contentinfo">
       <div class="footer__copyright">
         <p>
           Desarrollado por

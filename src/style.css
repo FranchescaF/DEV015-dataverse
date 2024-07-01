@@ -6,7 +6,8 @@
 
 h1{
   font-weight: 900;
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: 900;
   color: #511f52;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -259,6 +260,7 @@ h2 {
 .card-container__item:hover{
 background:#cfb3d3;;
 }
+
 /*Estilos para el footer*/
 .footer {
   background-color: #33102E;

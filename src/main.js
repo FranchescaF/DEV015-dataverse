@@ -10,6 +10,7 @@ let filteredData = data; // Inicialmente, los datos filtrados son todos los dato
 
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
+}
 
 function displayCards(filteredData) {
   mainElement.removeChild(ulElement);
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   orderSelect.addEventListener("change", (event) => {
     const selectedValueOrder = event.target.value;
-    filteredData = sortData(filteredData, "name", selectedValueOrder); // Ajusta "name" según el campo que deseas ordenar
+    filteredData = sortData(filteredData, "name", selectedValueOrder);
     resetSelectIndex(filterSelectGender);
     resetSelectIndex(filterSelectChapters);
     resetSelectIndex(filterSelectYear);
@@ -65,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     filterSelectYear.value = 'all';
     filterSelectChapters.value = 'all';
     orderSelect.value = 'all';
-    filteredData = data; // Reiniciar datos filtrados a todos los datos originales
+    filteredData = data; // Reinicia datos filtrados a todos los datos originales
     displayCards(filteredData);
     averageContainer.classList.remove('show');
     averageContainer1.classList.remove('show1');
@@ -121,5 +122,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Creamos varias flores de forma periódica
-  setInterval(createFlower, 500); // Ajusta este valor para cambiar la frecuencia
+  setInterval(createFlower, 200); // Ajusta este valor para cambiar la frecuencia
 });
