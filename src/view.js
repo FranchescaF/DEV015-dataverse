@@ -1,4 +1,8 @@
-export const renderItems = (data) => {
+export function renderItems(data) {
+  if (!data || !Array.isArray(data)) {
+    return document.createElement("ul");
+  }
+
   const ulElement = document.createElement("ul");
 
   data.forEach(item => {
@@ -25,4 +29,4 @@ export const renderItems = (data) => {
   });
 
   return ulElement;
-};
+}

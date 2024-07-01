@@ -17,36 +17,9 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataCopy = [...data];
-
-  if (sortBy === 'averageChapters' || sortBy === 'mostCommonGenre' || sortBy === 'highestAudienceDorama') {
-    // Ordenar por las estadísticas específicas
-    if (sortBy === 'averageChapters') {
-      dataCopy.sort((a, b) => {
-        if (sortOrder === 'asc') {
-          return a.facts.chapters - b.facts.chapters;
-        } else {
-          return b.facts.chapters - a.facts.chapters;
-        }
-      });
-    } else if (sortBy === 'mostCommonGenre') {
-      // Asumir que ordenar por género más común
-      dataCopy.sort((a, b) => {
-        if (sortOrder === 'asc') {
-          return a.facts.gender.localeCompare(b.facts.gender);
-        } else {
-          return b.facts.gender.localeCompare(a.facts.gender);
-        }
-      });
-    } else if (sortBy === 'highestAudienceDorama') {
-      dataCopy.sort((a, b) => {
-        if (sortOrder === 'asc') {
-          return a.facts.audiencePercentage - b.facts.audiencePercentage;
-        } else {
-          return b.facts.audiencePercentage - a.facts.audiencePercentage;
-        }
-      });
-    }
+  const dataCopy = data.map(obj => ({ ...obj }));
+  if (sortOrder === "asc") {
+    return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
   } else {
     // Ordenar por otros campos
     dataCopy.sort((a, b) => {
@@ -57,8 +30,7 @@ export const sortData = (data, sortBy, sortOrder) => {
       }
     });
   }
-  return dataCopy;
-}
+};
 
 export const computeStats = (data) => {
   // Calcular el promedio de capítulos
