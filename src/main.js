@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderSelect = document.querySelector("#order-select");
   const clearButton = document.querySelector('[data-testid="button-clear"]');
   const metricsButton = document.querySelector(".metrics");
-  const calculateButton = document.getElementById("button-calculate");
-  const averageContainer = document.getElementById("average-container");
-  const averageContainer1 = document.getElementById("average-container1");
-  const averageContainer2 = document.getElementById("average-container2");
-  const flowerContainer = document.getElementById('falling-flowers');
+  const calculateButton = document.querySelector("#button-calculate");
+  const averageContainer = document.querySelector("#average-container");
+  const averageContainer1 = document.querySelector("#average-container1");
+  const averageContainer2 = document.querySelector("#average-container2");
+  const flowerContainer = document.querySelector('#falling-flowers');
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
