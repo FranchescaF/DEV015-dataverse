@@ -24,8 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderSelect = document.querySelector("#order-select");
   const clearButton = document.querySelector('[data-testid="button-clear"]');
   const metricsButton = document.querySelector(".metrics");
-  const calculateButton = document.getElementById("button-calculate");
-  const averageContainer = document.getElementById("average-container");
+  const calculateButton = document.querySelector("#button-calculate");
+  const averageContainer = document.querySelector("#average-container");
+  const averageContainer1 = document.querySelector("#average-container1");
+  const averageContainer2 = document.querySelector("#average-container2");
+  const flowerContainer = document.querySelector('#falling-flowers');
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
@@ -70,6 +73,10 @@ document.addEventListener("DOMContentLoaded", () => {
     orderSelect.value = 'all';
     displayCards(data);
     averageContainer.classList.remove('show');
+    averageContainer1.classList.remove('show1');
+    averageContainer2.classList.remove('show2');
+
+
   });
 
   metricsButton.addEventListener("click", () => {
@@ -83,6 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const stats = computeStats(data);
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
 
+    averageContainer.innerHTML = `
+    <p>Promedio de capítulos de los Kdramas: ${minValue}</p>
+    `;
     // Limpiar el contenedor antes de agregar nuevas estadísticas
     averageContainer.innerHTML = '';
 
@@ -106,6 +116,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mostrar el contenedor
     averageContainer.classList.add('show');
+
+    averageContainer1.innerHTML = `
+    <p>Género más promocionado: ${mostCommonGenre}</p>
+  `;
+    averageContainer1.classList.add('show1');
+
+    averageContainer2.innerHTML = `
+    <p>Kdrama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
+  `;
+    averageContainer2.classList.add('show2');
   });
+
+  function createFlower() {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+
+    // Posición inicial aleatoria en el eje X
+    flower.style.left = `${Math.random() * 100}vw`;
+
+    // Duración aleatoria de la animación
+    flower.style.animationDuration = `${5 + Math.random() * 5}s`;
+
+    // Retardo aleatorio de la animación
+    flower.style.animationDelay = `${Math.random() * 5}s`;
+
+    // Añadimos la flor al contenedor
+    flowerContainer.appendChild(flower);
+
+    // Eliminamos la flor una vez termina la animación
+    flower.addEventListener('animationend', () => {
+      flowerContainer.removeChild(flower);
+    });
+  }
+
+  // Creamos varias flores de forma periódica
+  setInterval(createFlower, 500); // Ajusta este valor para cambiar la frecuencia
+
 
 });
