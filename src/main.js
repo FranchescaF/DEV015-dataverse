@@ -2,14 +2,12 @@ import { filterData, sortData, metricsData,computeStats} from './dataFunctions.j
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
-
-
 const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
 
-function resetSelectIndex(selectElement) {
-  selectElement.selectedIndex = 0;
+function resetSelectIndex(...selectElements) {
+  selectElements.forEach(selectElement => selectElement.selectedIndex = 0);
 }
 
 function displayCards(data) {
@@ -35,27 +33,21 @@ document.addEventListener("DOMContentLoaded", () => {
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
     const filterItemsGender = filterData(data, "gender", selectedValueGender);
-    resetSelectIndex(filterSelectYear);
-    resetSelectIndex(filterSelectChapters);
-    resetSelectIndex(orderSelect);
+    resetSelectIndex(filterSelectYear, filterSelectChapters, orderSelect);
     displayCards(filterItemsGender);
   });
 
   filterSelectYear.addEventListener("change", (event) => {
     const selectedValueYear = event.target.value;
     const filterItemsYear = filterData(data, "year", selectedValueYear);
-    resetSelectIndex(filterSelectGender);
-    resetSelectIndex(filterSelectChapters);
-    resetSelectIndex(orderSelect);
+    resetSelectIndex(filterSelectGender, filterSelectChapters, orderSelect);
     displayCards(filterItemsYear);
   });
 
   filterSelectChapters.addEventListener("change", (event) => {
     const selectedValueChapters = event.target.value;
     const filterItemsChapters = filterData(data, "chapters", selectedValueChapters);
-    resetSelectIndex(filterSelectGender);
-    resetSelectIndex(filterSelectYear);
-    resetSelectIndex(orderSelect);
+    resetSelectIndex(filterSelectGender, filterSelectYear, orderSelect);
     displayCards(filterItemsChapters);
   });
 
@@ -88,35 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //STATS
   calculateButton.addEventListener("click", () => {
-    // Calcular estadísticas
     const stats = computeStats(data);
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
 
     averageContainer.innerHTML = `
     <p>Promedio de capítulos de los Kdramas: ${minValue}</p>
     `;
-    // Limpiar el contenedor antes de agregar nuevas estadísticas
-    averageContainer.innerHTML = '';
-
-    // Crear elementos para mostrar las estadísticas
-    const divChapters = document.createElement('div');
-    divChapters.classList.add('stats');
-    divChapters.innerHTML = `<p>Promedio de capítulos: ${minValue}</p>`;
-
-    const divGenre = document.createElement('div');
-    divGenre.classList.add('stats');
-    divGenre.innerHTML = `<p>Género más promocionado: ${mostCommonGenre}</p>`;
-
-    const divAudience = document.createElement('div');
-    divAudience.classList.add('stats');
-    divAudience.innerHTML = `<p>Dorama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>`;
-
-    // Agregar los elementos al contenedor
-    averageContainer.appendChild(divChapters);
-    averageContainer.appendChild(divGenre);
-    averageContainer.appendChild(divAudience);
-
-    // Mostrar el contenedor
     averageContainer.classList.add('show');
 
     averageContainer1.innerHTML = `

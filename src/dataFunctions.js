@@ -17,18 +17,52 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataCopy = data.map((obj) => obj);
-  if (sortOrder === "asc") {
-    return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+  const dataCopy = [...data];
+
+  if (sortBy === 'averageChapters' || sortBy === 'mostCommonGenre' || sortBy === 'highestAudienceDorama') {
+    // Ordenar por las estadísticas específicas
+    if (sortBy === 'averageChapters') {
+      dataCopy.sort((a, b) => {
+        if (sortOrder === 'asc') {
+          return a.facts.chapters - b.facts.chapters;
+        } else {
+          return b.facts.chapters - a.facts.chapters;
+        }
+      });
+    } else if (sortBy === 'mostCommonGenre') {
+      // Asumir que ordenar por género más común
+      dataCopy.sort((a, b) => {
+        if (sortOrder === 'asc') {
+          return a.facts.gender.localeCompare(b.facts.gender);
+        } else {
+          return b.facts.gender.localeCompare(a.facts.gender);
+        }
+      });
+    } else if (sortBy === 'highestAudienceDorama') {
+      dataCopy.sort((a, b) => {
+        if (sortOrder === 'asc') {
+          return a.facts.audiencePercentage - b.facts.audiencePercentage;
+        } else {
+          return b.facts.audiencePercentage - a.facts.audiencePercentage;
+        }
+      });
+    }
   } else {
-    return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
+    // Ordenar por otros campos
+    dataCopy.sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a[sortBy].localeCompare(b[sortBy]);
+      } else {
+        return b[sortBy].localeCompare(a[sortBy]);
+      }
+    });
   }
+  return dataCopy;
 }
 
 export const computeStats = (data) => {
   // Calcular el promedio de capítulos
   const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
-
   const averageChapters = (totalChapters / data.length);
   const minValue = Math.floor(averageChapters);
 
@@ -56,7 +90,6 @@ export const computeStats = (data) => {
     mostCommonGenre,
     highestAudienceDorama
   };
-
 };
 
 export const metricsData = (data) => {
@@ -68,6 +101,4 @@ export const metricsData = (data) => {
         parseFloat(a.facts["audiencePercentage"])
     ).slice(0, 3);
   }, []);
-
-
 }
