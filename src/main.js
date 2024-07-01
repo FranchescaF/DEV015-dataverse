@@ -11,7 +11,7 @@ let filteredData = data; // Inicialmente, los datos filtrados son todos los dato
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
-
+//
 function displayCards(filteredData) {
   mainElement.removeChild(ulElement);
   ulElement = renderItems(filteredData);
