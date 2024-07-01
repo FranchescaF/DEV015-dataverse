@@ -5,7 +5,6 @@ import data from './data/dataset.js';
 const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
-
 let filteredData = data; // Inicialmente, los datos filtrados son todos los datos
 
 function resetSelectIndex(selectElement) {

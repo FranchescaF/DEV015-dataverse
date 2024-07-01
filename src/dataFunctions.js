@@ -20,10 +20,8 @@ export const sortData = (data, sortBy, sortOrder) => {
   const dataCopy = data.map(obj => ({ ...obj }));
   if (sortOrder === "asc") {
     return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
-  } else if (sortOrder === "desc") {
-    return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
   } else {
-    return dataCopy;
+    return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
   }
 };
 
