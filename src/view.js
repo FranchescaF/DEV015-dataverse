@@ -29,4 +29,4 @@ export function renderItems(data) {
   });
 
   return ulElement;
-};
+}
