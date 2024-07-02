@@ -22,8 +22,9 @@
     </style>
   </head>
   <body>
+
     <div id="falling-flowers"></div>
-    <header>
+    <header role="banner">
       <h1>Kdrama Database</h1>
       <p class="header__description">
         ¡Hola! ¿Estás buscando el Kdrama perfecto para maratonear este fin de
@@ -35,7 +36,7 @@
         encontrarás recomendaciones adaptadas a tus gustos. ¡Explora y descubre
         tu próximo Kdrama favorito con nosotros!
       </p>
-      </header>
+    
       <!--Nav-->
       <nav class="filter-container" id="filter-container" role="navigation">
         <div class="filter-row">
@@ -80,11 +81,7 @@
           <!--Sección 3: Selección de Cápitulos-->
           <div class="filter-container__chapters">
             <label for="filter-chapters">Seleccionar por Cápitulos:</label>
-            <select
-              name="chapters"
-              id="filter-chapters"
-              data-testid="select-filter-3"
-            >
+            <select name="chapters" id="filter-chapters" data-testid="select-filter-3">
               <option value="all">Todos</option>
               <option value="9">9</option>
               <option value="12">12</option>
@@ -120,9 +117,10 @@
           <div id="average-container2" class="average-container"></div>
         </div>
       </nav>
+    </header>
     <main class="main" role="main">
       <div id="root" class="card-container"></div>
-    </main>
+          </main>
     <footer class="footer" role="contentinfo">
       <div class="footer__copyright">
         <p>

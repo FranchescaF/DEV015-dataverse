@@ -1,23 +1,24 @@
-import { filterData, sortData, metricsData,computeStats} from './dataFunctions.js';
+import { filterData, sortData, metricsData, computeStats } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
 
 const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
+//elementos
+let filteredData = data; // Inicialmente, los datos filtrados son todos los datos
 
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
 
-function displayCards(data) {
+function displayCards(filteredData) {
   mainElement.removeChild(ulElement);
-  ulElement = renderItems(data);
+  ulElement = renderItems(filteredData);
   mainElement.appendChild(ulElement);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
   const filterSelectGender = document.querySelector('#filter-gender');
   const filterSelectYear = document.querySelector("#filter-year");
   const filterSelectChapters = document.querySelector("#filter-chapters");
@@ -32,38 +33,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
-    const filterItemsGender = filterData(data, "gender", selectedValueGender);
+    filteredData = filterData(data, "gender", selectedValueGender);
     resetSelectIndex(filterSelectYear);
     resetSelectIndex(filterSelectChapters);
     resetSelectIndex(orderSelect);
-    displayCards(filterItemsGender);
+    displayCards(filteredData);
   });
 
   filterSelectYear.addEventListener("change", (event) => {
     const selectedValueYear = event.target.value;
-    const filterItemsYear = filterData(data, "year", selectedValueYear);
+    filteredData = filterData(data, "year", selectedValueYear);
     resetSelectIndex(filterSelectGender);
     resetSelectIndex(filterSelectChapters);
     resetSelectIndex(orderSelect);
-    displayCards(filterItemsYear);
+    displayCards(filteredData);
   });
 
   filterSelectChapters.addEventListener("change", (event) => {
     const selectedValueChapters = event.target.value;
-    const filterItemsChapters = filterData(data, "chapters", selectedValueChapters);
+    filteredData = filterData(data, "chapters", selectedValueChapters);
     resetSelectIndex(filterSelectGender);
     resetSelectIndex(filterSelectYear);
     resetSelectIndex(orderSelect);
-    displayCards(filterItemsChapters);
+    displayCards(filteredData);
   });
 
-  orderSelect.addEventListener("change",(event) => {
+  orderSelect.addEventListener("change", (event) => {
     const selectedValueOrder = event.target.value;
-    const orderItemsName = sortData(data, "name", selectedValueOrder);
+    filteredData = sortData(filteredData, "name", selectedValueOrder); // Ajusta "name" según el campo que deseas ordenar
     resetSelectIndex(filterSelectGender);
     resetSelectIndex(filterSelectChapters);
     resetSelectIndex(filterSelectYear);
-    displayCards(orderItemsName);
+    displayCards(filteredData);
   });
 
   clearButton.addEventListener("click", () => {
@@ -71,36 +72,35 @@ document.addEventListener("DOMContentLoaded", () => {
     filterSelectYear.value = 'all';
     filterSelectChapters.value = 'all';
     orderSelect.value = 'all';
-    displayCards(data);
+    filteredData = data; // Reiniciar datos filtrados a todos los datos originales
+    displayCards(filteredData);
     averageContainer.classList.remove('show');
     averageContainer1.classList.remove('show1');
     averageContainer2.classList.remove('show2');
-
-
   });
 
   metricsButton.addEventListener("click", () => {
-    const metricsItems = metricsData(data);
+    const metricsItems = metricsData(filteredData);
     displayCards(metricsItems);
   });
 
   calculateButton.addEventListener("click", () => {
-    const stats = computeStats(data);
+    const stats = computeStats(filteredData);
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
 
     averageContainer.innerHTML = `
-    <p>Promedio de capítulos de los Kdramas: ${minValue}</p>
+      <p>Promedio de capítulos de los Kdramas: ${minValue}</p>
     `;
     averageContainer.classList.add('show');
 
     averageContainer1.innerHTML = `
-    <p>Género más promocionado: ${mostCommonGenre}</p>
-  `;
+      <p>Género más promocionado: ${mostCommonGenre}</p>
+    `;
     averageContainer1.classList.add('show1');
 
     averageContainer2.innerHTML = `
-    <p>Kdrama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
-  `;
+      <p>Kdrama con mayor audiencia: ${highestAudienceDorama.name} (${highestAudienceDorama.facts.audiencePercentage}%)</p>
+    `;
     averageContainer2.classList.add('show2');
   });
 
@@ -128,5 +128,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Creamos varias flores de forma periódica
   setInterval(createFlower, 500); // Ajusta este valor para cambiar la frecuencia
-
 });

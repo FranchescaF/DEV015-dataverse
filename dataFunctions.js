@@ -17,15 +17,15 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataCopy = data.map((obj) => obj);
+  const dataCopy = data.map(obj => ({ ...obj }));
   if (sortOrder === "asc") {
     return dataCopy.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
   } else {
     return dataCopy.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
   }
-}
+};
 
-export let computeStats = (data) => {
+export const computeStats = (data) => {
   // Calcular el promedio de capítulos
   const totalChapters = data.reduce((sum, item) => sum + item.facts.chapters, 0);
 
