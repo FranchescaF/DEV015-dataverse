@@ -176,6 +176,27 @@ h1{
   display: block;
   opacity: 1;
   transform: translateY(0);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.average-container.show1 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.average-container.show2 {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 .button-clear, .metrics, .button-average {
@@ -311,6 +332,20 @@ h1{
     display: none; /* Ocultar descripción en pantallas pequeñas */
   }
 
+  .average-container.show {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .average-container.show1 {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .average-container.show2 {
+    width: auto;
+    max-width: 100%;
+  }
 }
 
 /* Para móviles */
@@ -369,5 +404,20 @@ h1{
 
   .button-row {
     margin: auto;
+  }
+
+  .average-container.show {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .average-container.show1 {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .average-container.show2 {
+    width: auto;
+    max-width: 100%;
   }
 }
