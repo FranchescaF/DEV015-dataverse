@@ -5,13 +5,13 @@ import data from './data/dataset.js';
 const mainElement = document.getElementById("root");
 let ulElement = renderItems(data);
 mainElement.appendChild(ulElement);
-
+//elementos
 let filteredData = data; // Inicialmente, los datos filtrados son todos los datos
 
 function resetSelectIndex(selectElement) {
   selectElement.selectedIndex = 0;
 }
-//
+
 function displayCards(filteredData) {
   mainElement.removeChild(ulElement);
   ulElement = renderItems(filteredData);
@@ -33,23 +33,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filterSelectGender.addEventListener("change", (event) => {
     const selectedValueGender = event.target.value;
-    const filterItemsGender = filterData(data, "gender", selectedValueGender);
-    resetSelectIndex(filterSelectYear, filterSelectChapters, orderSelect);
-    displayCards(filterItemsGender);
+    filteredData = filterData(data, "gender", selectedValueGender);
+    resetSelectIndex(filterSelectYear);
+    resetSelectIndex(filterSelectChapters);
+    resetSelectIndex(orderSelect);
+    displayCards(filteredData);
   });
 
   filterSelectYear.addEventListener("change", (event) => {
     const selectedValueYear = event.target.value;
-    const filterItemsYear = filterData(data, "year", selectedValueYear);
-    resetSelectIndex(filterSelectGender, filterSelectChapters, orderSelect);
-    displayCards(filterItemsYear);
+    filteredData = filterData(data, "year", selectedValueYear);
+    resetSelectIndex(filterSelectGender);
+    resetSelectIndex(filterSelectChapters);
+    resetSelectIndex(orderSelect);
+    displayCards(filteredData);
   });
 
   filterSelectChapters.addEventListener("change", (event) => {
     const selectedValueChapters = event.target.value;
-    const filterItemsChapters = filterData(data, "chapters", selectedValueChapters);
-    resetSelectIndex(filterSelectGender, filterSelectYear, orderSelect);
-    displayCards(filterItemsChapters);
+    filteredData = filterData(data, "chapters", selectedValueChapters);
+    resetSelectIndex(filterSelectGender);
+    resetSelectIndex(filterSelectYear);
+    resetSelectIndex(orderSelect);
+    displayCards(filteredData);
   });
 
   orderSelect.addEventListener("change", (event) => {
@@ -78,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
     displayCards(metricsItems);
   });
 
-  //STATS
   calculateButton.addEventListener("click", () => {
     const stats = computeStats(filteredData);
     const { minValue, mostCommonGenre, highestAudienceDorama } = stats;
