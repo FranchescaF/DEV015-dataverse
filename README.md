@@ -109,12 +109,12 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 A continuación, se adjuntan capturas de pantalla del prompt solicitado a la IA para la generación del conjunto de datos utilizado en la aplicación web. [ChatGPT](https://chatgpt.com/share/48e46d80-b8cd-4c6a-af3b-71506beacaf5)
 
 ![promp-IA1](image-10.png)
-![promp-IA2](image-12.png)
+![promp-IA2](image-14.png)
 
 Asi mismo, se adjunta captura de pantalla de la respuesta proporcionada por las IA.
 
 ![respuesta-IA](image-3.png)
-![respuesta-IA](image-13.png)
+![respuesta-IA](image-15.png)
 
 
 ## 5. Diseño de Interfaz y Prototipos 📋
@@ -126,10 +126,10 @@ La interfaz de **KdramaDatabase** está diseñada para ofrecer una experiencia i
 El prototipo de alta fidelidad de **KdramaDatabase** es la versión más detallada y refinada de la interfaz, integrando todos los estilos visuales y elementos interactivos para ofrecer una experiencia de usuario completa y envolvente. Este prototipo incorpora la estética final, la funcionalidad completa y la interacción intuitiva, sirviendo como una base precisa para el desarrollo final de la aplicación. A continuación, se adjuntan algunas imágenes del prototipo de alta fidelidad de la aplicación web.
 
 ![prototipo1-desktop](image-6.png)
-![prototipo2-desktop](image-7.png)
+![prototipo2-desktop](image-12.png)
 
 ![prototipo1-mobile](image-9.png)
-![prototipo2-mobile](image-8.png)
+![prototipo2-mobile](image-16.png)
 
 ## 6. Lenguajes y Herramientas Utilizadas 🛠️
 
