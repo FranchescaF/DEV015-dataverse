@@ -4,12 +4,12 @@
 
 - [1. Resumen del proyecto](#1-resumen-del-proyecto)
 - [2. Definición de producto](#2-definición-de-producto)
-- [3. Historias de Usuario](#3-historias-de-usuario)
-- [4. Generación de datos](#4-generación-de-datos)
-- [5. Diseño de Interfaz y Prototipos](#5-diseño-de-interfaz-y-prototipos)
-- [6. Lenguajes y Herramientas Utilizadas](#6-lenguajes-y-herramientas-utilizadas)
+- [3. Historias de Usuario 🚀](#3-historias-de-usuario-🚀)
+- [4. Generación de datos 📝](#4-generación-de-datos-📝)
+- [5. Diseño de Interfaz y Prototipos 📋](#5-diseño-de-interfaz-y-prototipos-📋)
+- [6. Lenguajes y Herramientas Utilizadas 🛠️](#6-lenguajes-y-herramientas-utilizadas-🛠️)
 - [7. Responsividad](#7-responsividad)
-- [8. Trabajo Colaborativo](#8-trabajo-colaborativo)
+- [8. Trabajo Colaborativo 📌](#8-trabajo-colaborativo-📌)
 
 ---
 
@@ -111,7 +111,7 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 
 A continuación, se adjuntan capturas de pantalla del prompt solicitado a la IA para la generación del conjunto de datos utilizado en la aplicación web. [ChatGPT](https://chatgpt.com/share/664c07e6-dcc8-433f-a775-657f08753550)
 
-![prompt-IA1](</IA%20(1).png>)
+![prompt-IA1](</IA%20(2).png>)
 
 Asi mismo, se adjunta captura de pantalla de la respuesta proporcionada por las IA.
 
