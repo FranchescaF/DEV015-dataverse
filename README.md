@@ -108,8 +108,8 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 
 A continuación, se adjuntan capturas de pantalla del prompt solicitado a la IA para la generación del conjunto de datos utilizado en la aplicación web. [ChatGPT](https://chatgpt.com/share/48e46d80-b8cd-4c6a-af3b-71506beacaf5)
 
-![promp-IA1](image-1.png)
-![promp-IA2](image-2.png)
+![promp-IA1](image-10.png)
+![promp-IA2](image-11.png)
 
 Asi mismo, se adjunta captura de pantalla de la respuesta proporcionada por las IA.
 
