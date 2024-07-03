@@ -27,7 +27,7 @@ body {
   position: absolute;
   width: 30px; /* Tamaño de la flor */
   height: 30px;
-  background-image: url('../774832.png'); /* Imagen de la flor */
+  background-image: url('../src/774832.png'); /* Imagen de la flor */
   background-size: cover;
   animation: fall linear infinite;
   pointer-events: none;
