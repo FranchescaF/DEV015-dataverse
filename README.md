@@ -110,97 +110,6 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 - **Ordenación Flexible:** Opciones para ordenar el título de los Kdramas en forma ascendente y descendente.
 - **Acceso a Rankings:** Visualización de datos como promedio de capítulos, géneros más comunes, ratings más altos y el top 3 de los Kdramas mas vistos, ayudando a los usuarios a entender tendencias y tomar decisiones informadas.
 
-<<<<<<< HEAD
-## 3. Historias de Usuario 🚀
-
-### Historia de Usuario 1: Filtro por Genero
-
-**Definición de Terminado (DoD):**
-- **Quién:** Como usuaria.
-- **Qué:** Quiero filtrar los Kdramas por género
-- **Para:** Que pueda ver únicamente los Kdramas que corresponden a mi preferencia de género.  
-
-**Criterios de Aceptación (AC):**
-- Debe haber un menú desplegable con opciones de      
-  diferentes géneros.
-- Al seleccionar un género, la lista de Kdramas debe 
-  actualizarse para mostrar solo aquellos que corresponden al 
-  género seleccionado.
-- Si selecciono "all", todos los Kdramas deben ser visibles.
-
-### Historia de Usuario 2: Filtro por Año
-
-**Definición de Terminado (DoD):**
-- **Quién:** Como usuaria. 
-- **Qué:** Quiero filtrar los Kdramas por año de lanzamiento.  
-- **Para:** Que pueda ver únicamente los Kdramas lanzados en un año específico.
-
-**Criterios de Aceptación (AC):**
-- Debe haber un menú desplegable con opciones de 
-  diferentes años.
-- Al seleccionar un año, la lista de Kdramas debe actualizarse 
-  para mostrar solo aquellos lanzados en el año seleccionado.
-- Si selecciono "all", todos los Kdramas deben ser visibles.
-
-### Historia de Usuario 3: Filtro por Número de Capítulos
-
-**Definición de Terminado (DoD):**
-- **Quién:** Como usuaria. 
-- **Qué:** Quiero filtrar los Kdramas por número de capítulos. 
-- **Para:** Que pueda ver únicamente los Kdramas con un número específico de capítulos.
-
-**Criterios de Aceptación (AC):**
-- Debe haber un menú desplegable con opciones para diferentes   
-  números de capítulos.
-- Al seleccionar un número de capítulos, la lista de Kdramas 
-  debe actualizarse para mostrar solo aquellos con el número de 
-  capítulos seleccionado.
-- Si selecciono "all", todos los Kdramas deben ser visibles.
-
-### Historia de Usuario 4: Ordenar Kdramas por Nombre
-
-**Definición de Terminado (DoD):**
-- **Quién:** Como usuaria. 
-- **Qué:** Quiero ordenar la lista de Kdramas alfabéticamente por nombre. 
-- **Para:** Que pueda encontrar fácilmente un Kdrama específico por su nombre.
-
-**Criterios de Aceptación (AC):**
-- Debe haber un menú desplegable con opciones para 
-  ordenar alfabéticamente en orden ascendente y descendente.
-- Al seleccionar una opción de orden, la lista de Kdramas debe 
-  actualizarse para reflejar el orden seleccionado.
-- La ordenación debe aplicarse sobre la lista filtrada actual, 
-  si hay filtros activos.
-
-## 4. Generación de datos 📝
-
-A continuación, se adjuntan capturas de pantalla del prompt solicitado a la IA para la generación del conjunto de datos utilizado en la aplicación web. [ChatGPT](https://chatgpt.com/share/48e46d80-b8cd-4c6a-af3b-71506beacaf5)
-
-![promp-IA1](image-10.png)
-![promp-IA2](image-14.png)
-
-Asi mismo, se adjunta captura de pantalla de la respuesta proporcionada por las IA.
-
-![respuesta-IA](image-3.png)
-![respuesta-IA](image-15.png)
-
-
-## 5. Diseño de Interfaz y Prototipos 📋
-
-La interfaz de **KdramaDatabase** está diseñada para ofrecer una experiencia intuitiva y atractiva, permitiendo a los usuarios explorar, aprender y disfrutar de Kdramas de manera eficiente y organizada. Con un enfoque en la usabilidad y la presentación clara de información, el diseño facilita la navegación y la comprensión de los datos sobre cada Kdrama.
-
-### Prototipos de Alta Fidelidad:
-
-El prototipo de alta fidelidad de **KdramaDatabase** es la versión más detallada y refinada de la interfaz, integrando todos los estilos visuales y elementos interactivos para ofrecer una experiencia de usuario completa y envolvente. Este prototipo incorpora la estética final, la funcionalidad completa y la interacción intuitiva, sirviendo como una base precisa para el desarrollo final de la aplicación. A continuación, se adjuntan algunas imágenes del prototipo de alta fidelidad de la aplicación web.
-
-![prototipo1-desktop](image-6.png)
-![prototipo2-desktop](image-12.png)
-
-![prototipo1-mobile](image-9.png)
-![prototipo2-mobile](image-16.png)
-
-## 6. Lenguajes y Herramientas Utilizadas 🛠️
-=======
 ## 4. Generación de datos
 
 A continuación, se adjuntan capturas de pantalla del prompt solicitado a la IA para la generación del conjunto de datos utilizado en la aplicación web. [ChatGPT](https://chatgpt.com/share/664c07e6-dcc8-433f-a775-657f08753550)
@@ -226,7 +135,6 @@ El prototipo de alta fidelidad de **Kdrama Database** es una versión detallada 
 ![prototipo-mobile](/500PX.jpg)
 
 ## 6. Lenguajes y Herramientas Utilizadas
->>>>>>> 23f419e1fa8f2a45462f2c0b1632cdb1ba67bd3f
 
 En el desarrollo de nuestro proyecto, hemos utilizado un lenguaje de programación y herramientas para garantizar su funcionalidad y diseño. A continuación, detallamos el principal lenguaje y herramientas que forman parte de nuestro proyecto:
 
