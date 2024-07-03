@@ -48,9 +48,9 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 ### Historia de Usuario 1: Filtro por Genero
 
 **Definición de Terminado (DoD):**
-**Quién:** Como usuaria.
-**Qué:** Quiero filtrar los Kdramas por género
-**Para:** Que pueda ver únicamente los Kdramas que corresponden a mi preferencia de género.  
+- **Quién:** Como usuaria.
+- **Qué:** Quiero filtrar los Kdramas por género
+- **Para:** Que pueda ver únicamente los Kdramas que corresponden a mi preferencia de género.  
 
 **Criterios de Aceptación (AC):**
 - Debe haber un menú desplegable con opciones de      
@@ -63,9 +63,9 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 ### Historia de Usuario 2: Filtro por Año
 
 **Definición de Terminado (DoD):**
-**Quién:** Como usuaria. 
-**Qué:** Quiero filtrar los Kdramas por año de lanzamiento.  
-**Para:** Que pueda ver únicamente los Kdramas lanzados en un año específico.
+- **Quién:** Como usuaria. 
+- **Qué:** Quiero filtrar los Kdramas por año de lanzamiento.  
+- **Para:** Que pueda ver únicamente los Kdramas lanzados en un año específico.
 
 **Criterios de Aceptación (AC):**
 - Debe haber un menú desplegable con opciones de 
@@ -77,9 +77,9 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 ### Historia de Usuario 3: Filtro por Número de Capítulos
 
 **Definición de Terminado (DoD):**
-**Quién:** Como usuaria. 
-**Qué:** Quiero filtrar los Kdramas por número de capítulos. 
-**Para:** Que pueda ver únicamente los Kdramas con un número específico de capítulos.
+- **Quién:** Como usuaria. 
+- **Qué:** Quiero filtrar los Kdramas por número de capítulos. 
+- **Para:** Que pueda ver únicamente los Kdramas con un número específico de capítulos.
 
 **Criterios de Aceptación (AC):**
 - Debe haber un menú desplegable con opciones para diferentes   
@@ -92,9 +92,9 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 ### Historia de Usuario 4: Ordenar Kdramas por Nombre
 
 **Definición de Terminado (DoD):**
-**Quién:** Como usuaria. 
-**Qué:** Quiero ordenar la lista de Kdramas alfabéticamente por nombre. 
-**Para:** Que pueda encontrar fácilmente un Kdrama específico por su nombre.
+- **Quién:** Como usuaria. 
+- **Qué:** Quiero ordenar la lista de Kdramas alfabéticamente por nombre. 
+- **Para:** Que pueda encontrar fácilmente un Kdrama específico por su nombre.
 
 **Criterios de Aceptación (AC):**
 - Debe haber un menú desplegable con opciones para 
