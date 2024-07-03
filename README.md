@@ -33,8 +33,6 @@ En consideración con la lluvia de ideas inicial, identificamos que el **usuario
 
 - **Acceso a Estadísticas:** Los usuarios pueden acceder a estadísticas que incluyen el promedio de capítulos, el género más común entre los Kdramas disponibles, y el Kdrama con el mayor porcentaje de audiencia. Esta información es útil para los usuarios que desean comprender mejor las tendencias y características de los Kdramas.
 
-<<<<<<< HEAD
-=======
 ## 3. Historias de Usuario
 
 ### Historia de Usuario 1: Filtro por Genero
@@ -100,7 +98,6 @@ En consideración con la lluvia de ideas inicial, identificamos que el **usuario
 - Al seleccionar una opción de orden, la lista de Kdramas debe actualizarse para reflejar el orden seleccionado.
 - La ordenación debe aplicarse sobre la lista filtrada actual, si hay filtros activos.
 
->>>>>>> 23f419e1fa8f2a45462f2c0b1632cdb1ba67bd3f
 ### Resolución de Necesidades del Usuario:
 
 KdramaDatabase es una solución web que responde a todas las necesidades de los entusiastas de los Kdramas. La plataforma permite a los usuarios explorar y descubrir los últimos y más populares Kdramas, ofreciendo las siguientes funcionalidades:
@@ -152,25 +149,6 @@ En el desarrollo de nuestro proyecto, hemos utilizado un lenguaje de programaci�
 
 - **Control de Versiones (Git):** Esencial para el seguimiento eficiente de cambios en el código, facilitando la colaboración entre desarrolladores en nuestro proyecto de Kdramas.
 - **Pruebas Unitarias(Jest):** Utilizado para asegurar la calidad y robustez del código JavaScript mediante pruebas exhaustivas, garantizando su funcionamiento y rendimiento en el contexto de nuestra aplicación de Kdramas.
-<<<<<<< HEAD
-- **Prototipado y Diseño de Interfaz (Figma):** Utilizado para el prototipado y diseño de la interfaz, permitiendo la creación de maquetas visuales y la planificación de la experiencia de usuario. [Prototipo-figma]()
-- **Historias de Usuario:** Utilizadas para definir claramente los requisitos y expectativas de los usuarios finales en nuestro proyecto de Kdramas. Aseguran que el desarrollo esté alineado con las necesidades y deseos de los usuarios.
-
-Estos elementos y herramientas nos han permitido desarrollar una aplicación web completa y funcional para Kdramas, con un diseño atractivo y una experiencia de usuario optimizada. La combinación de HTML semántico, CSS responsive, JavaScript y herramientas como Git, Jest y Figma ha sido crucial para lograr un producto robusto, interactivo y de alta calidad.
-
-## 7. Responsividad
-
-### 7.1. Testing
-
-## 8. Trabajo Colaborativo 📌
-
-### Herramientas de Colaboración ⌨️
-
-### Equipo de Diseño y Desarrollo ✒️
-
-- []()
-- []()
-=======
 - **Prototipado y Diseño de Interfaz (Figma):** Utilizado para el prototipado y diseño de la interfaz, permitiendo la creación de maquetas visuales y la planificación de la experiencia de usuario. [Prototipo-figma](https://www.figma.com/design/FTDSJu9RwT1XYvCmNSnuVO/KDRAMA-DATABASE?node-id=0-1&t=rOTVIOuAeiHudXf6-1)
 - **Historias de Usuario:** Utilizadas para definir claramente los requisitos y expectativas de los usuarios finales en nuestro proyecto de Kdramas. Aseguran que el desarrollo esté alineado con las necesidades y deseos de los usuarios. -**Visual Studio Code:** Se ha utilizado Visual Studio Code como entorno de desarrollo para la implementación del diseño y la gestión del código. -**Colorimetria:** Utilizado para la paleta de colores de la página web. [Colores](https://webgradients.com/)
 
@@ -204,4 +182,3 @@ Como parte de un proyecto práctico como estudiantes de desarrollo web de Labora
 ## Visita la web:
 
 https://franchescaf.github.io/DEV015-dataverse/
->>>>>>> 23f419e1fa8f2a45462f2c0b1632cdb1ba67bd3f
