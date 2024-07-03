@@ -33,7 +33,7 @@ En consideración con la lluvia de ideas inicial, identificamos que el **usuario
 
 - **Acceso a Estadísticas:** Los usuarios pueden acceder a estadísticas que incluyen el promedio de capítulos, el género más común entre los Kdramas disponibles, y el Kdrama con el mayor porcentaje de audiencia. Esta información es útil para los usuarios que desean comprender mejor las tendencias y características de los Kdramas.
 
-## 3. Historias de Usuario 🚀
+## 3. Historias de Usuario
 
 ### Historia de Usuario 1: Filtro por Genero
 
@@ -107,7 +107,7 @@ KdramaDatabase es una solución web que responde a todas las necesidades de los 
 - **Ordenación Flexible:** Opciones para ordenar el título de los Kdramas en forma ascendente y descendente.
 - **Acceso a Rankings:** Visualización de datos como promedio de capítulos, géneros más comunes, ratings más altos y el top 3 de los Kdramas mas vistos, ayudando a los usuarios a entender tendencias y tomar decisiones informadas.
 
-## 4. Generación de datos 📝
+## 4. Generación de datos
 
 A continuación, se adjuntan capturas de pantalla del prompt solicitado a la IA para la generación del conjunto de datos utilizado en la aplicación web. [ChatGPT](https://chatgpt.com/share/664c07e6-dcc8-433f-a775-657f08753550)
 
@@ -117,7 +117,7 @@ Asi mismo, se adjunta captura de pantalla de la respuesta proporcionada por las 
 
 ![respuesta-IA](</IA%20(1).png>)
 
-## 5. Diseño de Interfaz y Prototipos 📋
+## 5. Diseño de Interfaz y Prototipos
 
 La interfaz de **Kdrama Database** está diseñada para ofrecer una experiencia intuitiva y atractiva, permitiendo a los usuarios explorar, aprender y disfrutar de Kdramas de manera eficiente y organizada. Con un enfoque en la usabilidad y la presentación clara de información, el diseño facilita la navegación y la comprensión de los datos sobre cada Kdrama.
 
@@ -131,7 +131,7 @@ El prototipo de alta fidelidad de **Kdrama Database** es una versión detallada 
 
 ![prototipo-mobile](/500PX.jpg)
 
-## 6. Lenguajes y Herramientas Utilizadas 🛠️
+## 6. Lenguajes y Herramientas Utilizadas
 
 En el desarrollo de nuestro proyecto, hemos utilizado un lenguaje de programación y herramientas para garantizar su funcionalidad y diseño. A continuación, detallamos el principal lenguaje y herramientas que forman parte de nuestro proyecto:
 
@@ -166,11 +166,11 @@ Utilizamos Media Queries en CSS para aplicar estilos personalizados según el ta
 2. Abre el archivo `index.html` en tu navegador para explorar la Galería de Arte Practicum y conocer las historias de cada ciudad.
 3. Disfruta de la experiencia inmersiva y aprende más sobre tus colegas en línea.
 
-## 8. Trabajo Colaborativo 📌
+## 8. Trabajo Colaborativo
 
 Este proyecto fue creado y desarrollado en colaboración por dos personas, quienes contribuyeron con su conocimiento y experiencia para alcanzar un resultado exitoso.
 
-### Equipo de Diseño y Desarrollo ✒️
+### Equipo de Diseño y Desarrollo
 
 Este proyecto fue desarrollado por:
 
