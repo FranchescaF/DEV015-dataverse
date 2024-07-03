@@ -4,12 +4,12 @@
 
 - [1. Resumen del proyecto](#1-resumen-del-proyecto)
 - [2. Definición de producto](#2-definición-de-producto)
-- [3. Historias de Usuario 🚀](#3-historias-de-usuario-🚀)
-- [4. Generación de datos 📝](#4-generación-de-datos-📝)
-- [5. Diseño de Interfaz y Prototipos 📋](#5-diseño-de-interfaz-y-prototipos-📋)
-- [6. Lenguajes y Herramientas Utilizadas 🛠️](#6-lenguajes-y-herramientas-utilizadas-🛠️)
+- [3. Historias de Usuario 🚀](#3-historias-de-usuario)
+- [4. Generación de datos 📝](#4-generación-de-datos)
+- [5. Diseño de Interfaz y Prototipos 📋](#5-diseño-de-interfaz-y-prototipos)
+- [6. Lenguajes y Herramientas Utilizadas 🛠️](#6-lenguajes-y-herramientas-utilizadas)
 - [7. Responsividad](#7-responsividad)
-- [8. Trabajo Colaborativo 📌](#8-trabajo-colaborativo-📌)
+- [8. Trabajo Colaborativo 📌](#8-trabajo-colaborativo)
 
 ---
 
@@ -119,11 +119,11 @@ Asi mismo, se adjunta captura de pantalla de la respuesta proporcionada por las 
 
 ## 5. Diseño de Interfaz y Prototipos 📋
 
-La interfaz de **KdramaDatabase** está diseñada para ofrecer una experiencia intuitiva y atractiva, permitiendo a los usuarios explorar, aprender y disfrutar de Kdramas de manera eficiente y organizada. Con un enfoque en la usabilidad y la presentación clara de información, el diseño facilita la navegación y la comprensión de los datos sobre cada Kdrama.
+La interfaz de **Kdrama Database** está diseñada para ofrecer una experiencia intuitiva y atractiva, permitiendo a los usuarios explorar, aprender y disfrutar de Kdramas de manera eficiente y organizada. Con un enfoque en la usabilidad y la presentación clara de información, el diseño facilita la navegación y la comprensión de los datos sobre cada Kdrama.
 
 ### Prototipos de Alta Fidelidad:
 
-El prototipo de alta fidelidad de **KdramaDatabase** es la versión más detallada y refinada de la interfaz, integrando todos los estilos visuales y elementos interactivos para ofrecer una experiencia de usuario completa y envolvente. Este prototipo incorpora la estética final, la funcionalidad completa y la interacción intuitiva, sirviendo como una base precisa para el desarrollo final de la aplicación. A continuación, se adjuntan algunas imágenes del prototipo de alta fidelidad de la aplicación web.
+El prototipo de alta fidelidad de **Kdrama Database** es una versión detallada y refinada de la interfaz, integrando estilos visuales y elementos interactivos para ofrecer una experiencia de usuario completa. Este prototipo presenta la estética final y funcionalidad completa, sirviendo como base para el desarrollo final de la aplicación. A continuación, se muestran algunas imágenes del prototipo de la aplicación web.
 
 ![prototipo-desktop](/1440PX.jpg)
 
